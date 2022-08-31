@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
-  <link rel="canonical" href="https://blog.nxingcloud.co/posts/a3ad802e/"/>
+  <link rel="canonical" href="https://nxingcloud.co/posts/a3ad802e/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -25,26 +25,26 @@
   <!-- Custom Files headBegin begin-->
   
   <!-- Custom Files headBegin end-->
-    <link rel="shortcut icon" type='image/x-icon' href="http://rh651xal8.hd-bkt.clouddn.com/img/Earthlogo.ico?image">
+    <link rel="shortcut icon" type='image/x-icon' href="http://rh651xal8.hd-bkt.clouddn.com/img/icon1.png?image">
   <link rel="preload" href="/css/style.css" as="style">
-  <link rel="preload" href="https://unpkg.com/volantis-static@0.0.1654736714924/media/fonts/VarelaRound/VarelaRound-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
-<link rel="preload" href="https://unpkg.com/volantis-static@0.0.1654736714924/media/fonts/UbuntuMono/UbuntuMono-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+  <link rel="preload" href="http://rh651xal8.hd-bkt.clouddn.com/img/SourceHanSerifCN-Medium-6.otf" as="font" type="font/otf" crossorigin="anonymous">
+<link rel="preload" href="http://rh651xal8.hd-bkt.clouddn.com/img/SourceHanSerifCN-Medium-6.otf" as="font" type="font/otf" crossorigin="anonymous">
 
   <!-- feed -->
   <!-- 页面元数据 -->
   <title>Onedrive直链提取+IDM实现满速下载！ - 南星有话说</title>
   <meta name="keywords" content="Onedrive，直链下载，IDM, 网盘满速,NXing,NXingcloud,南星,博客,Blog,C++,C语言,Python,网络技术,volantis">
-  <meta desc name="description" content="这里是南星的小站，用来做我的学习记录记录，不定时分享C语言，C++，Python，计算机网络，及日常使用技巧等方面的内容 - 南星&NXing - 南星有话说">
+  <meta desc name="description" content="OneDrive虽然嫖到了5T但是速度慢到极致是不是很不甘心，心里发痒？别急！OneDrive的真正实力远超你想象！今天，我就来教大家如何用oneindex+IDM让你的OneDrive下载速度爆表。话不多说，正文开整！！！ - 南星&NXing - 南星有话说">
   
 <meta property="og:type" content="article">
 <meta property="og:title" content="Onedrive直链提取+IDM实现满速下载！">
-<meta property="og:url" content="https://blog.nxingcloud.co/posts/a3ad802e/index.html">
+<meta property="og:url" content="https://nxingcloud.co/posts/a3ad802e/index.html">
 <meta property="og:site_name" content="南星有话说">
-<meta property="og:description" content="Onedrive直链提取+IDM实现满速下载！OneDrive虽然嫖到了5T但是速度慢到极致是不是很不甘心，心里发痒？别急！OneDrive的真正实力远超你想象！今天，我就来教大家如何用oneindex+IDM让你的OneDrive下载速度爆表。话不多说，正文开整！！！ 国内网盘现状某度与阿里百度网盘破解版Pandownload开发者被抓的事件，真是闹得红红火火恍恍惚惚了~ 百度爽了，众多白嫖网盘">
+<meta property="og:description" content="OneDrive虽然嫖到了5T但是速度慢到极致是不是很不甘心，心里发痒？别急！OneDrive的真正实力远超你想象！今天，我就来教大家如何用oneindex+IDM让你的OneDrive下载速度爆表。话不多说，正文开整！！！">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2022-05-15T18:39:16.000Z">
-<meta property="article:modified_time" content="2022-08-15T16:00:00.000Z">
+<meta property="article:modified_time" content="2022-08-30T16:00:00.000Z">
 <meta property="article:author" content="南星&amp;NXing">
 <meta property="article:tag" content="Onedrive，直链下载，IDM, 网盘满速">
 <meta name="twitter:card" content="summary">
@@ -238,7 +238,7 @@ button {
   -webkit-box-shadow: 0 2px 4px 0px rgba(0,0,0,0.1), 0 4px 8px 0px rgba(0,0,0,0.1), 0 8px 16px 0px rgba(0,0,0,0.1);
 }
 #l_cover {
-  min-height: 64px;
+  min-height: 60px;
 }
 .cover-wrapper {
   top: 0;
@@ -387,7 +387,7 @@ button {
 .cover-wrapper#half {
   max-height: 640px;
   min-height: 400px;
-  height: calc(36vh - 64px + 200px);
+  height: calc(36vh - 60px + 200px);
 }
 .cover-wrapper #scroll-down {
   width: 100%;
@@ -493,7 +493,7 @@ button {
   }
 }
 .cover-wrapper .cover-body {
-  margin-top: 64px;
+  margin-top: 60px;
   margin-bottom: 100px;
 }
 .cover-wrapper .cover-body,
@@ -993,14 +993,14 @@ button {
 }
 @font-face {
   font-family: 'UbuntuMono';
-  src: url("https://unpkg.com/volantis-static@0.0.1654736714924/media/fonts/UbuntuMono/UbuntuMono-Regular.ttf");
+  src: url("http://rh651xal8.hd-bkt.clouddn.com/img/SourceHanSerifCN-Medium-6.otf");
   font-weight: 'normal';
   font-style: 'normal';
   font-display: swap;
 }
 @font-face {
-  font-family: 'Varela Round';
-  src: url("https://unpkg.com/volantis-static@0.0.1654736714924/media/fonts/VarelaRound/VarelaRound-Regular.ttf");
+  font-family: 'HanYiCuFangSongJian';
+  src: url("http://rh651xal8.hd-bkt.clouddn.com/img/SourceHanSerifCN-Medium-6.otf");
   font-weight: 'normal';
   font-style: 'normal';
   font-display: swap;
@@ -1010,7 +1010,7 @@ button {
   z-index: 1000;
   top: 0;
   width: 100%;
-  height: 64px;
+  height: 60px;
   background: var(--color-card);
   box-shadow: 0 1px 2px 0px rgba(0,0,0,0.1);
   -webkit-box-shadow: 0 1px 2px 0px rgba(0,0,0,0.1);
@@ -1072,12 +1072,12 @@ button {
   -ms-transition: all 0.28s ease;
 }
 .l_header #wrapper.sub .nav-main {
-  transform: translateY(-64px);
-  -webkit-transform: translateY(-64px);
-  -khtml-transform: translateY(-64px);
-  -moz-transform: translateY(-64px);
-  -o-transform: translateY(-64px);
-  -ms-transform: translateY(-64px);
+  transform: translateY(-60px);
+  -webkit-transform: translateY(-60px);
+  -khtml-transform: translateY(-60px);
+  -moz-transform: translateY(-60px);
+  -o-transform: translateY(-60px);
+  -ms-transform: translateY(-60px);
 }
 .l_header #wrapper .nav-sub {
   transition: all 0.28s ease;
@@ -1089,7 +1089,7 @@ button {
   opacity: 0;
   -webkit-opacity: 0;
   -moz-opacity: 0;
-  height: 64px;
+  height: 60px;
   width: calc(100% - 2 * 16px);
   position: absolute;
 }
@@ -1113,20 +1113,20 @@ button {
   position: relative;
   color: var(--color-text);
   padding-left: 24px;
-  max-height: 64px;
+  max-height: 60px;
 }
 .l_header #wrapper .nav-main .title {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   flex-shrink: 0;
-  line-height: 64px;
+  line-height: 60px;
   padding: 0 24px;
   font-size: 1.25rem;
   font-family: "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Helvetica, monospace;
 }
 .l_header #wrapper .nav-main .title img {
-  height: 64px;
+  height: 60px;
 }
 .l_header .nav-sub {
   max-width: 1080px;
@@ -1136,7 +1136,7 @@ button {
   font-weight: bold;
   font-family: UbuntuMono, "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Menlo, Monaco, monospace, sans-serif;
   line-height: 1.2;
-  max-height: 64px;
+  max-height: 60px;
   white-space: normal;
   flex-shrink: 1;
 }
@@ -1144,7 +1144,7 @@ button {
   display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
   display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
   display: none;
-  line-height: 64px;
+  line-height: 60px;
   align-items: center;
 }
 .l_header .switcher .s-toc {
@@ -1163,7 +1163,7 @@ button {
   }
 }
 .l_header .switcher >li {
-  height: 48px;
+  height: 44px;
   transition: all 0.28s ease;
   -webkit-transition: all 0.28s ease;
   -khtml-transition: all 0.28s ease;
@@ -1175,7 +1175,7 @@ button {
 @media screen and (max-width: 500px) {
   .l_header .switcher >li {
     margin: 0 1px;
-    height: 48px;
+    height: 44px;
   }
 }
 .l_header .switcher >li >a {
@@ -1192,8 +1192,8 @@ button {
   -o-justify-content: center;
   -ms-justify-content: center;
   align-items: center;
-  width: 48px;
-  height: 48px;
+  width: 44px;
+  height: 44px;
   padding: 0.85em 1.1em;
   border-radius: 100px;
   -webkit-border-radius: 100px;
@@ -1217,7 +1217,7 @@ button {
 @media screen and (max-width: 500px) {
   .l_header .switcher >li >a {
     width: 36px;
-    height: 48px;
+    height: 44px;
   }
 }
 .l_header .nav-sub .switcher {
@@ -1235,7 +1235,7 @@ button {
   display: -webkit-flex /* NEW - Chrome */;
   display: flex /* NEW, Spec - Opera 12.1, Firefox 20+ */;
   display: flex;
-  height: 64px;
+  height: 60px;
   width: 240px;
   transition: all 0.28s ease;
   -webkit-transition: all 0.28s ease;
@@ -1366,8 +1366,8 @@ button {
     -ms-transition: all 0.28s ease;
   }
   .l_header .m_search .input {
-    border-radius: 32px;
-    -webkit-border-radius: 32px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
     margin-left: 16px;
     padding-left: 16px;
   }
@@ -1514,10 +1514,10 @@ ul.list-v >li>a:hover {
 }
 .l_header ul.nav-list-h>li {
   color: var(--color-list);
-  line-height: 64px;
+  line-height: 60px;
 }
 .l_header ul.nav-list-h>li >a {
-  max-height: 64px;
+  max-height: 60px;
   overflow: hidden;
   color: inherit;
 }
@@ -1915,9 +1915,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: false,
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1661916833656),
+    lastupdate: new Date(1661947389964),
     sidebar: {
-      for_page: ["blogger","music","category","tagcloud","lastupdate"],
+      for_page: ["blogger","music","category","lastupdate"],
       for_post: ["toc","music"],
       webinfo: {
         lastupd: {
@@ -2357,7 +2357,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
         <a class="title flat-box" target="_self" href='/'>
           
-            <img no-lazy class='logo' src='http://rh651xal8.hd-bkt.clouddn.com/img/Earthlogo.ico?image'/>
+            <img no-lazy class='logo' src='http://rh651xal8.hd-bkt.clouddn.com/img/icon1.png?image'/>
           
           
           
@@ -2596,17 +2596,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div class='list-h'>
         
           
-            <a target="_blank" rel="noopener" href="http://150.158.185.126:7788/"
+            <a href="/http:/150.158.185.126:9999/"
               
               
-              active-action="action-http:150158185126:7788">
-              <img src='http://rh651xal8.hd-bkt.clouddn.com/img/pagelogo2.svg?image'><p>主页</p>
-            </a>
-          
-            <a href="/"
-              
-              
-              active-action="action-home">
+              active-action="action-http:150158185126:9999">
               <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f4f0.svg'><p>博客</p>
             </a>
           
@@ -2624,7 +2617,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
               <img src='http://rh651xal8.hd-bkt.clouddn.com/img/airdroplogo.png?image'><p>空投</p>
             </a>
           
-            <a target="_blank" rel="noopener" href="https://nxingcloud.co/zh-CN/"
+            <a href="https://nxingcloud.co/zh-CN/"
               
               
               active-action="action-https:nxingcloudcozh-CN">
@@ -2647,8 +2640,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="body-wrapper">
           
 <div id="l_main" class=''>
-  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
-  <link itemprop="mainEntityOfPage" href="https://blog.nxingcloud.co/posts/a3ad802e/">
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow article-type-post" id="post" itemscope itemprop="blogPost">
+  <link itemprop="mainEntityOfPage" href="https://nxingcloud.co/posts/a3ad802e/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="南星有话说">
   </span>
@@ -2660,9 +2653,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
   
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
+    <div class='headimg-div'>
+      <a class='headimg-a'>
+        <img itemprop="image" class='headimg' src='http://rh651xal8.hd-bkt.clouddn.com/img/OnedriveTitle.png?image'/>
+      </a>
+    </div>
   
   <div class="article-meta" id="top">
     
@@ -2676,9 +2671,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
             
 <div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <a itemprop="url" class='author' href="https://blog.nxingcloud.co" rel="nofollow">
+  <a itemprop="url" class='author' target="_blank" href="https://blog.nxingcloud.co" rel="nofollow noopener">
     <img itemprop="image" src="https://s1.ax1x.com/2022/05/13/OyS53F.jpg" class="lazyload" data-srcset="https://s1.ax1x.com/2022/05/13/OyS53F.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-    <p itemprop="name">NXing</p>
+    <p itemprop="name">南星&NXing</p>
   </a>
 </div>
 
@@ -2740,37 +2735,36 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <h1 id="Onedrive直链提取-IDM实现满速下载！"><a href="#Onedrive直链提取-IDM实现满速下载！" class="headerlink" title="Onedrive直链提取+IDM实现满速下载！"></a>Onedrive直链提取+IDM实现满速下载！</h1><p>OneDrive虽然嫖到了5T但是速度慢到极致是不是很不甘心，心里发痒？别急！OneDrive的真正实力远超你想象！今天，我就来教大家如何用oneindex+IDM让你的OneDrive下载速度爆表。话不多说，正文开整！！！</p>
-<h2 id="国内网盘现状"><a href="#国内网盘现状" class="headerlink" title="国内网盘现状"></a>国内网盘现状</h2><h3 id="某度与阿里"><a href="#某度与阿里" class="headerlink" title="某度与阿里"></a>某度与阿里</h3><p>百度网盘破解版Pandownload开发者被抓的事件，真是闹得红红火火恍恍惚惚了~ 百度爽了，众多<del>白嫖</del>网盘爱好者却一片哀嚎~ 阿里又玩了一出新花样，号称不限速又整出个非永久容量，还是得开会员才能获得更多容量（虽然有一系列小活动可以获得容量，但是网友们会满意吗！？）</p>
-<h3 id="Onedrive"><a href="#Onedrive" class="headerlink" title="Onedrive"></a>Onedrive</h3><p>难道真的没有一些优秀的网盘供我们使用了吗？</p>
+    <h2 id="一、引言"><a href="#一、引言" class="headerlink" title="一、引言"></a>一、引言</h2><p>OneDrive虽然嫖到了5T但是速度慢到极致是不是很不甘心，心里发痒？别急！OneDrive的真正实力远超你想象！今天，我就来教大家如何用oneindex+IDM让你的OneDrive下载速度爆表。话不多说，正文开整！！！</p>
+<h2 id="二、现状"><a href="#二、现状" class="headerlink" title="二、现状"></a>二、现状</h2><h3 id="2-1-某度与阿里"><a href="#2-1-某度与阿里" class="headerlink" title="2.1 某度与阿里"></a>2.1 某度与阿里</h3><p>百度网盘破解版Pandownload开发者被抓的事件，真是闹得红红火火恍恍惚惚了~ 百度爽了，众多<del>白嫖</del>网盘爱好者却一片哀嚎~ 阿里又玩了一出新花样，号称不限速又整出个非永久容量，还是得开会员才能获得更多容量（虽然有一系列小活动可以获得容量，但是难以满足网友们的需求）</p>
+<h3 id="2-2-Onedrive"><a href="#2-2-Onedrive" class="headerlink" title="2.2 Onedrive"></a>2.2 Onedrive</h3><p>难道真的没有一些优秀的网盘供我们使用了吗？</p>
 <p>当然有！肯定有一些朋友早就想起来了Onedrive这个windows的系统级网盘，国内Onedrive用户不在少数，但是Onedrive国际版速度在国内十分不稳定，但是相对来说下载速度能稳定在1M/s以上，比某度强出太多了。同时一众网友又通过开发者计划白嫖（bushi）到了E5的5T容量账号，不拿来挥霍简直浑身发痒。</p>
 <p>早在某度限流严重的同时，网上就浮现了众多通过直链下载来达到满速下载的目的。那么对应的，Onedrive当然也可以通过直链来达到满速下载的效果，而且相对于某度来说简直不要方便了太多！</p>
-<h4 id="Onedrive直链提取"><a href="#Onedrive直链提取" class="headerlink" title="Onedrive直链提取"></a>Onedrive直链提取</h4><p>其实Onedrive有着微软在背后作支撑，它与windows的融合程度堪称完美。连直链提取都比某度方便了太多。如果不是Onedrive国际版的服务器部署在国外，那简直堪称完美！<br>话不多说，我们直接开始看怎么进行直链提取。</p>
-<h5 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h5><p>第一步我们直接在onedrive文件夹里找到自己想要提取连接的文件，然后右击它<br><a target="_blank" rel="noopener" href="https://imgtu.com/i/OROOvF"><img src="https://s1.ax1x.com/2022/05/16/OROOvF.md.png" class="lazyload" data-srcset="https://s1.ax1x.com/2022/05/16/OROOvF.md.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="OROOvF.md.png"></a></p>
+<h2 id="三、满速下载"><a href="#三、满速下载" class="headerlink" title="三、满速下载"></a>三、满速下载</h2><h3 id="3-1-Onedrive直链提取"><a href="#3-1-Onedrive直链提取" class="headerlink" title="3.1 Onedrive直链提取"></a>3.1 Onedrive直链提取</h3><p>其实Onedrive有着微软在背后作支撑，它与windows的融合程度堪称完美。连直链提取都比某度方便了太多。如果不是Onedrive国际版的服务器部署在国外，那简直堪称完美！<br>话不多说，我们直接开始看怎么进行直链提取。</p>
+<h4 id="3-1-1-获取Onedrive共享链接"><a href="#3-1-1-获取Onedrive共享链接" class="headerlink" title="3.1.1 获取Onedrive共享链接"></a>3.1.1 获取Onedrive共享链接</h4><p>第一步我们直接在onedrive文件夹里找到自己想要提取连接的文件，然后右击它<br><a target="_blank" rel="noopener" href="https://imgtu.com/i/OROOvF"><img src="https://s1.ax1x.com/2022/05/16/OROOvF.md.png" class="lazyload" data-srcset="https://s1.ax1x.com/2022/05/16/OROOvF.md.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="OROOvF.md.png"></a></p>
 <p>我们鼠标选到Onedrive，它会弹出来要做的操作<br><a target="_blank" rel="noopener" href="https://imgtu.com/i/OROxb9"><img src="https://s1.ax1x.com/2022/05/16/OROxb9.md.png" class="lazyload" data-srcset="https://s1.ax1x.com/2022/05/16/OROxb9.md.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="OROxb9.md.png"></a></p>
-<h4 id="共享"><a href="#共享" class="headerlink" title="共享"></a>共享</h4><p>我们点击共享，然后找到下面的复制链接，点击旁边的复制<br><a target="_blank" rel="noopener" href="https://imgtu.com/i/ORX94x"><img src="https://s1.ax1x.com/2022/05/16/ORX94x.md.png" class="lazyload" data-srcset="https://s1.ax1x.com/2022/05/16/ORX94x.md.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="ORX94x.md.png"></a></p>
-<h4 id="复制"><a href="#复制" class="headerlink" title="复制"></a>复制</h4><p>看到这样的字样就是复制到了Onedrive的分享连接。<br><a target="_blank" rel="noopener" href="https://imgtu.com/i/ORXi8K"><img src="https://s1.ax1x.com/2022/05/16/ORXi8K.md.png" class="lazyload" data-srcset="https://s1.ax1x.com/2022/05/16/ORXi8K.md.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="ORXi8K.md.png"></a></p>
-<h4 id="获取直链"><a href="#获取直链" class="headerlink" title="获取直链"></a>获取直链</h4><p>然后最关键的步骤在这里，我们该怎样把分享链接转为下载直链呢？其实很简单。<br>将 OneDrive分享地址中”<a target="_blank" rel="noopener" href="https://1drv.ms/&quot;">https://1drv.ms/&quot;</a> 调整为 “<a target="_blank" rel="noopener" href="http://1drv.stdfirm.com/&quot;%EF%BC%8C%E5%90%8E%E9%9D%A2%E7%9A%84%E5%90%8E%E7%BC%80%E4%B8%8D%E8%A6%81%E5%8A%A8%EF%BC%8C%E5%AE%9E%E7%8E%B0%E7%9B%B4%E9%93%BE%E8%8E%B7%E5%8F%96%E3%80%82">http://1drv.stdfirm.com/&quot;，后面的后缀不要动，实现直链获取。</a></p>
+<p>我们点击共享，然后找到下面的复制链接，点击旁边的复制<br><a target="_blank" rel="noopener" href="https://imgtu.com/i/ORX94x"><img src="https://s1.ax1x.com/2022/05/16/ORX94x.md.png" class="lazyload" data-srcset="https://s1.ax1x.com/2022/05/16/ORX94x.md.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="ORX94x.md.png"></a></p>
+<p>看到这样的字样就是复制到了Onedrive的分享连接。<br><a target="_blank" rel="noopener" href="https://imgtu.com/i/ORXi8K"><img src="https://s1.ax1x.com/2022/05/16/ORXi8K.md.png" class="lazyload" data-srcset="https://s1.ax1x.com/2022/05/16/ORXi8K.md.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="ORXi8K.md.png"></a></p>
+<h4 id="3-1-2-共享链接转换为直链"><a href="#3-1-2-共享链接转换为直链" class="headerlink" title="3.1.2 共享链接转换为直链"></a>3.1.2 共享链接转换为直链</h4><p>然后最关键的步骤在这里，我们该怎样把分享链接转为下载直链呢？其实很简单。<br>将 OneDrive分享地址中”<a target="_blank" rel="noopener" href="https://1drv.ms/&quot;">https://1drv.ms/&quot;</a> 调整为 “<a target="_blank" rel="noopener" href="http://1drv.stdfirm.com/&quot;%EF%BC%8C%E5%90%8E%E9%9D%A2%E7%9A%84%E5%90%8E%E7%BC%80%E4%B8%8D%E8%A6%81%E5%8A%A8%EF%BC%8C%E5%AE%9E%E7%8E%B0%E7%9B%B4%E9%93%BE%E8%8E%B7%E5%8F%96%E3%80%82">http://1drv.stdfirm.com/&quot;，后面的后缀不要动，实现直链获取。</a></p>
 <p>即，将1drv.ms –&gt; 1drv.stdfirm.com</p>
 <p>或者，为了图方便我们可以直接打开<a target="_blank" rel="noopener" href="http://1drv.stdfirm.com/">直链转换网站</a></p>
 <div class="tag link"><a class="link-card" title="Onedrive直链提取" target="_blank" rel="noopener" href="http://1drv.stdfirm.com/"><div class="left"><img src="https://gcore.jsdelivr.net/gh/xaoxuu/cdn-assets@master/logo/256/safari.png" class="lazyload" data-srcset="https://gcore.jsdelivr.net/gh/xaoxuu/cdn-assets@master/logo/256/safari.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/></div><div class="right"><p class="text">Onedrive直链提取</p><p class="url">http://1drv.stdfirm.com/</p></div></a></div>
 <p><a target="_blank" rel="noopener" href="https://imgtu.com/i/ORXHZd"><img src="https://s1.ax1x.com/2022/05/16/ORXHZd.md.png" class="lazyload" data-srcset="https://s1.ax1x.com/2022/05/16/ORXHZd.md.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="ORXHZd.md.png"></a></p>
 <p>将自己复制到的链接粘贴到上面然后直接点击提取后，把下面的链接复制起来就是直链啦~</p>
-<h3 id="利用IDM实现满速下载"><a href="#利用IDM实现满速下载" class="headerlink" title="利用IDM实现满速下载"></a>利用IDM实现满速下载</h3><p>拿到直链后，我们直接打开IDM（Internet Download Manager）,没有的朋友点<a target="_blank" rel="noopener" href="https://nxingcloud.co/api/raw/?path=/IDM%20-6.38.7.2%20%20%E4%B8%AD%E6%96%87%E7%BB%BF%E8%89%B2%E7%89%B9%E5%88%AB%E7%89%88.rar">这里</a>进行下载哦。</p>
-<div class="tag link"><a class="link-card" title="IDM-中文绿色版" target="_blank" rel="noopener" href="https://nxingcloud.co/api/raw/?path=/IDM%20-6.38.7.2%20%20中文绿色特别版.rar"><div class="left"><img src="https://s1.ax1x.com/2022/05/16/ORv74I.png" class="lazyload" data-srcset="https://s1.ax1x.com/2022/05/16/ORv74I.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/></div><div class="right"><p class="text">IDM-中文绿色版</p><p class="url">https://nxingcloud.co/api/raw/?path=/IDM%20-6.38.7.2%20%20中文绿色特别版.rar</p></div></a></div>
+<h3 id="3-2-利用IDM-Motrix实现满速下载"><a href="#3-2-利用IDM-Motrix实现满速下载" class="headerlink" title="3.2 利用IDM/Motrix实现满速下载"></a>3.2 利用IDM/Motrix实现满速下载</h3><p>针对Onedrive不同文件的直链，下载速度也会有所偏差。基本上IDM和Motrix都有可能达到满速的效果。这里以IDM为例来展示下载过程。</p>
+<h4 id="3-2-1-安装IDM"><a href="#3-2-1-安装IDM" class="headerlink" title="3.2.1 安装IDM"></a>3.2.1 安装IDM</h4><p>拿到直链后，我们直接打开IDM（Internet Download Manager）,没有的朋友点<a href="https://nxingcloud.co/api/raw/?path=/IDM%20-6.38.7.2%20%20%E4%B8%AD%E6%96%87%E7%BB%BF%E8%89%B2%E7%89%B9%E5%88%AB%E7%89%88.rar">这里</a>进行下载哦。</p>
+<div class="tag link"><a class="link-card" title="IDM-中文绿色版" href="https://nxingcloud.co/api/raw/?path=/IDM%20-6.38.7.2%20%20中文绿色特别版.rar"><div class="left"><img src="https://s1.ax1x.com/2022/05/16/ORv74I.png" class="lazyload" data-srcset="https://s1.ax1x.com/2022/05/16/ORv74I.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/></div><div class="right"><p class="text">IDM-中文绿色版</p><p class="url">https://nxingcloud.co/api/raw/?path=/IDM%20-6.38.7.2%20%20中文绿色特别版.rar</p></div></a></div>
 
 <p>下载之后找一个习惯的文件夹解压出来，解压出来后先点击绿化，然后打开下面的<strong>IDMan.exe</strong>文件就可以用啦<br><a target="_blank" rel="noopener" href="https://imgtu.com/i/ORvq8P"><img src="https://s1.ax1x.com/2022/05/16/ORvq8P.md.png" class="lazyload" data-srcset="https://s1.ax1x.com/2022/05/16/ORvq8P.md.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="ORvq8P.md.png"></a></p>
 <div class="note warning"><p>解压出来后一定要先点击绿化！！</p></div>
 
-<p>打开后我们直接点击新建任务。<br><a target="_blank" rel="noopener" href="https://imgtu.com/i/ORXzQS"><img src="https://s1.ax1x.com/2022/05/16/ORXzQS.md.png" class="lazyload" data-srcset="https://s1.ax1x.com/2022/05/16/ORXzQS.md.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="ORXzQS.md.png"></a></p>
+<h4 id="3-2-2-建立下载任务"><a href="#3-2-2-建立下载任务" class="headerlink" title="3.2.2 建立下载任务"></a>3.2.2 建立下载任务</h4><p>打开后我们直接点击新建任务。<br><a target="_blank" rel="noopener" href="https://imgtu.com/i/ORXzQS"><img src="https://s1.ax1x.com/2022/05/16/ORXzQS.md.png" class="lazyload" data-srcset="https://s1.ax1x.com/2022/05/16/ORXzQS.md.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="ORXzQS.md.png"></a></p>
 <p>然后把刚才复制到的直链粘贴进去后点击确定。<br><a target="_blank" rel="noopener" href="https://imgtu.com/i/ORjAJ0"><img src="https://s1.ax1x.com/2022/05/16/ORjAJ0.md.png" class="lazyload" data-srcset="https://s1.ax1x.com/2022/05/16/ORjAJ0.md.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="ORjAJ0.md.png"></a></p>
 <p>弹出确认下载窗口后等待右边出现文件图标和大小信息（很快），直接点击开始下载就可以享受Onedrive满速下载啦（具体下载速度依个人网络环境而定）<br><a target="_blank" rel="noopener" href="https://imgtu.com/i/ORjnL4"><img src="https://s1.ax1x.com/2022/05/16/ORjnL4.md.png" class="lazyload" data-srcset="https://s1.ax1x.com/2022/05/16/ORjnL4.md.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="ORjnL4.md.png"></a></p>
 <p>在这里最好是等它出现具体文件信息后再点击下载，会直接进入飞速模式~</p>
-<h3 id="结束"><a href="#结束" class="headerlink" title="结束"></a>结束</h3><p>看起来图和字这么多，其实是我为了讲解详细一点把每一步过程都写进来了。实际操作起来很快~ 快去试试吧~ 感谢大家的观看~</p>
-<div class="note warning"><p>注意，经过本人和网友测试，发现此种方法只适用于下载onedrive中的单个文件而不能下载整个文件夹，当用文件夹的共享链接下载时会变为apx文件。目前这个漏洞源于Onedrive的局限性，尚无法修复</p></div>
+<h2 id="四、结语"><a href="#四、结语" class="headerlink" title="四、结语"></a>四、结语</h2><p>每一款网盘软件的出现都会有其生命周期，都会面临它的荣光与衰落。作为消费者的我们究其根本也只是想寻找一款符合自己使用需求的网盘。谨慎选用，理性支持。众多网盘解决方案中总会有符合自己需求的那一个。</p>
+<h2 id="五、局限性"><a href="#五、局限性" class="headerlink" title="五、局限性"></a>五、局限性</h2><div class="note warning"><p>注意，经过本人和网友测试，发现此种方法只适用于下载onedrive中的单个文件而不能下载整个文件夹，当用文件夹的共享链接下载时会变为apx文件。目前这个漏洞源于Onedrive的局限性，尚无法修复</p></div>
 
-<p>我的藏宝阁中有更多实用资源</p>
-<div class="tag link"><a class="link-card" title="南星的藏宝阁" target="_blank" rel="noopener" href="https://nxingcloud.co/zh-CN/"><div class="left"><img src="https://s1.ax1x.com/2022/05/13/OyS53F.jpg" class="lazyload" data-srcset="https://s1.ax1x.com/2022/05/13/OyS53F.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/></div><div class="right"><p class="text">南星的藏宝阁</p><p class="url">https://nxingcloud.co/zh-CN/</p></div></a></div>
   </div>
   
   
@@ -2792,7 +2786,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                 
               
                 
-                  <p>本文永久链接是：<a href="https://blog.nxingcloud.co/posts/a3ad802e/">https://blog.nxingcloud.co/posts/a3ad802e/</a></p>
+                  <p>本文永久链接是：<a href="https://nxingcloud.co/posts/a3ad802e/">https://nxingcloud.co/posts/a3ad802e/</a></p>
                 
               
             </blockquote>
@@ -2811,10 +2805,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-08-16T00:00:00+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-08-31T00:00:00+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2022年8月16日</p>
+    <p>更新于：2022年8月31日</p>
   </a>
 </div>
 
@@ -2858,7 +2852,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://blog.nxingcloud.co/posts/a3ad802e/&title=Onedrive直链提取+IDM实现满速下载！ - 南星有话说&summary="
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://nxingcloud.co/posts/a3ad802e/&title=Onedrive直链提取+IDM实现满速下载！ - 南星有话说&summary="
           
           >
           
@@ -2870,7 +2864,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://blog.nxingcloud.co/posts/a3ad802e/&title=Onedrive直链提取+IDM实现满速下载！ - 南星有话说&summary="
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://nxingcloud.co/posts/a3ad802e/&title=Onedrive直链提取+IDM实现满速下载！ - 南星有话说&summary="
           
           >
           
@@ -2882,7 +2876,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=https://blog.nxingcloud.co/posts/a3ad802e/&title=Onedrive直链提取+IDM实现满速下载！ - 南星有话说&summary="
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://nxingcloud.co/posts/a3ad802e/&title=Onedrive直链提取+IDM实现满速下载！ - 南星有话说&summary="
           
           >
           
@@ -2913,18 +2907,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
 
   
-    <div class="prev-next">
-      
-      
-        <a class='next' href='/posts/24875eea/'>
-          <p class='title'>我的第一篇博客！<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>1哈咯呀大家，我是南星，目前是一名大三在校生。
-1.0说起来也是误打误撞有了想要搭建一个自己的博客网站，也算是很有成就感的一件事情吧。
-2.0目前还是在摸索前进当中，如果有人能看到我的博客网站还...</p>
-        </a>
-      
-    </div>
-  
   <!-- Custom Files postEnd begin-->
   
   <!-- Custom Files postEnd end-->
@@ -2934,7 +2916,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
 
 
-  <article class="post white-box shadow floatable blur" id="comments">
+  <article class="post white-box shadow" id="comments">
     <span hidden>
       <meta itemprop="discussionUrl" content="/posts/a3ad802e/index.html#comments">
     </span>
@@ -3013,7 +2995,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%BD%E5%86%85%E7%BD%91%E7%9B%98%E7%8E%B0%E7%8A%B6"><span class="toc-number">1.</span> <span class="toc-text">国内网盘现状</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9F%90%E5%BA%A6%E4%B8%8E%E9%98%BF%E9%87%8C"><span class="toc-number">1.1.</span> <span class="toc-text">某度与阿里</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Onedrive"><span class="toc-number">1.2.</span> <span class="toc-text">Onedrive</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Onedrive%E7%9B%B4%E9%93%BE%E6%8F%90%E5%8F%96"><span class="toc-number">1.2.1.</span> <span class="toc-text">Onedrive直链提取</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E6%AD%A5"><span class="toc-number">1.2.1.1.</span> <span class="toc-text">第一步</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%85%B1%E4%BA%AB"><span class="toc-number">1.2.2.</span> <span class="toc-text">共享</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A4%8D%E5%88%B6"><span class="toc-number">1.2.3.</span> <span class="toc-text">复制</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%8E%B7%E5%8F%96%E7%9B%B4%E9%93%BE"><span class="toc-number">1.2.4.</span> <span class="toc-text">获取直链</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%A9%E7%94%A8IDM%E5%AE%9E%E7%8E%B0%E6%BB%A1%E9%80%9F%E4%B8%8B%E8%BD%BD"><span class="toc-number">1.3.</span> <span class="toc-text">利用IDM实现满速下载</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%93%E6%9D%9F"><span class="toc-number">1.4.</span> <span class="toc-text">结束</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E5%BC%95%E8%A8%80"><span class="toc-text">一、引言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E7%8E%B0%E7%8A%B6"><span class="toc-text">二、现状</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-%E6%9F%90%E5%BA%A6%E4%B8%8E%E9%98%BF%E9%87%8C"><span class="toc-text">2.1 某度与阿里</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-Onedrive"><span class="toc-text">2.2 Onedrive</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E6%BB%A1%E9%80%9F%E4%B8%8B%E8%BD%BD"><span class="toc-text">三、满速下载</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-Onedrive%E7%9B%B4%E9%93%BE%E6%8F%90%E5%8F%96"><span class="toc-text">3.1 Onedrive直链提取</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#3-1-1-%E8%8E%B7%E5%8F%96Onedrive%E5%85%B1%E4%BA%AB%E9%93%BE%E6%8E%A5"><span class="toc-text">3.1.1 获取Onedrive共享链接</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-1-2-%E5%85%B1%E4%BA%AB%E9%93%BE%E6%8E%A5%E8%BD%AC%E6%8D%A2%E4%B8%BA%E7%9B%B4%E9%93%BE"><span class="toc-text">3.1.2 共享链接转换为直链</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-%E5%88%A9%E7%94%A8IDM-Motrix%E5%AE%9E%E7%8E%B0%E6%BB%A1%E9%80%9F%E4%B8%8B%E8%BD%BD"><span class="toc-text">3.2 利用IDM&#x2F;Motrix实现满速下载</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#3-2-1-%E5%AE%89%E8%A3%85IDM"><span class="toc-text">3.2.1 安装IDM</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-2-2-%E5%BB%BA%E7%AB%8B%E4%B8%8B%E8%BD%BD%E4%BB%BB%E5%8A%A1"><span class="toc-text">3.2.2 建立下载任务</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E7%BB%93%E8%AF%AD"><span class="toc-text">四、结语</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%94%E3%80%81%E5%B1%80%E9%99%90%E6%80%A7"><span class="toc-text">五、局限性</span></a></li></ol>
     </div>
   </section>
 
@@ -4026,7 +4008,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // 请求 PV 并自增
       var pvCtn = document.querySelector('#lc-sv');
       if (pvCtn || enableIncr) {
-        var pvGetter = this.getRecord(Counter, 'https://blog.nxingcloud.co' + '/#lc-sv', 'Visits').then((record) => {
+        var pvGetter = this.getRecord(Counter, 'https://nxingcloud.co' + '/#lc-sv', 'Visits').then((record) => {
           incrArr.push(this.buildIncrement(record.objectId))
           var eles = document.querySelectorAll('#lc-sv #number');
           if (eles.length > 0) {
@@ -4044,7 +4026,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // 请求 UV 并自增
       var uvCtn = document.querySelector('#lc-uv');
       if (uvCtn || enableIncr) {
-        var uvGetter = this.getRecord(Counter, 'https://blog.nxingcloud.co' + '/#lc-uv', 'Visitors').then((record) => {
+        var uvGetter = this.getRecord(Counter, 'https://nxingcloud.co' + '/#lc-uv', 'Visitors').then((record) => {
           var vuv = this.validUV();
           vuv && incrArr.push(this.buildIncrement(record.objectId))
           var eles = document.querySelectorAll('#lc-uv #number');
@@ -4066,7 +4048,7 @@ document.addEventListener("DOMContentLoaded", function () {
         for (i = 0; i < allPV.length; i++) {
           let pv = allPV[i];
           let title = pv.getAttribute('data-title');
-          var url = 'https://blog.nxingcloud.co' + pv.getAttribute('data-path');
+          var url = 'https://nxingcloud.co' + pv.getAttribute('data-path');
           if (url) {
             var viewGetter = this.getRecord(Counter, url, title).then((record) => {
               // 是当前页面就自增
@@ -4342,7 +4324,7 @@ document.addEventListener("DOMContentLoaded", function () {
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"南星有话说","url":"https://blog.nxingcloud.co/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"南星&NXing","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blog.nxingcloud.co/","sameAs":["https://github.com/volantis-x"],"description":"这里是南星的小站，用来做我的学习记录记录，不定时分享C语言，C++，Python，计算机网络，及日常使用技巧等方面的内容"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://blog.nxingcloud.co/","name":"南星有话说"}},{"@type":"ListItem","position":2,"item":{"@id":"https://blog.nxingcloud.co/categories/Onedrive/","name":"/Onedrive"}},{"@type":"ListItem","position":3,"item":{"@id":"https://blog.nxingcloud.co/posts/a3ad802e/","name":"Onedrive直链提取+IDM实现满速下载！"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"南星有话说","url":"https://blog.nxingcloud.co/","keywords":"NXing,NXingcloud,南星,博客,Blog,C++,C语言,Python,网络技术,volantis","description":"这里是南星的小站，用来做我的学习记录记录，不定时分享C语言，C++，Python，计算机网络，及日常使用技巧等方面的内容","author":{"@type":"Person","name":"南星&NXing","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blog.nxingcloud.co/","description":"这里是南星的小站，用来做我的学习记录记录，不定时分享C语言，C++，Python，计算机网络，及日常使用技巧等方面的内容"},"publisher":{"@type":"Organization","name":"南星有话说","url":"https://blog.nxingcloud.co/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://blog.nxingcloud.co?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Onedrive直链提取+IDM实现满速下载！","description":"这里是南星的小站，用来做我的学习记录记录，不定时分享C语言，C++，Python，计算机网络，及日常使用技巧等方面的内容","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.nxingcloud.co/posts/a3ad802e/"},"author":{"@type":"Person","name":"南星&NXing","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blog.nxingcloud.co/"},"publisher":{"@type":"Organization","name":"南星有话说","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://blog.nxingcloud.co/posts/a3ad802e/","wordCount":0,"datePublished":"2022-05-15T18:39:16.000Z","dateModified":"2022-08-15T16:00:00.000Z","articleSection":"/Onedrive","keywords":"Onedrive，直链下载，IDM, 网盘满速","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"南星有话说","url":"https://nxingcloud.co/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"南星&NXing","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://nxingcloud.co/","sameAs":["https://github.com/volantis-x"],"description":"这里是南星的小站，用来做我的学习记录记录，不定时分享C语言，C++，Python，计算机网络，及日常使用技巧等方面的内容"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://nxingcloud.co/","name":"南星有话说"}},{"@type":"ListItem","position":2,"item":{"@id":"https://nxingcloud.co/categories/Onedrive/","name":"/Onedrive"}},{"@type":"ListItem","position":3,"item":{"@id":"https://nxingcloud.co/posts/a3ad802e/","name":"Onedrive直链提取+IDM实现满速下载！"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"南星有话说","url":"https://nxingcloud.co/","keywords":"NXing,NXingcloud,南星,博客,Blog,C++,C语言,Python,网络技术,volantis","description":"这里是南星的小站，用来做我的学习记录记录，不定时分享C语言，C++，Python，计算机网络，及日常使用技巧等方面的内容","author":{"@type":"Person","name":"南星&NXing","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://nxingcloud.co/","description":"这里是南星的小站，用来做我的学习记录记录，不定时分享C语言，C++，Python，计算机网络，及日常使用技巧等方面的内容"},"publisher":{"@type":"Organization","name":"南星有话说","url":"https://nxingcloud.co/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://nxingcloud.co?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Onedrive直链提取+IDM实现满速下载！","description":"OneDrive虽然嫖到了5T但是速度慢到极致是不是很不甘心，心里发痒？别急！OneDrive的真正实力远超你想象！今天，我就来教大家如何用oneindex+IDM让你的OneDrive下载速度爆表。话不多说，正文开整！！！","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://nxingcloud.co/posts/a3ad802e/"},"author":{"@type":"Person","name":"南星&NXing","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://nxingcloud.co/"},"publisher":{"@type":"Organization","name":"南星有话说","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://nxingcloud.co/posts/a3ad802e/","wordCount":0,"datePublished":"2022-05-15T18:39:16.000Z","dateModified":"2022-08-30T16:00:00.000Z","articleSection":"/Onedrive","keywords":"Onedrive，直链下载，IDM, 网盘满速","image":{"@type":"ImageObject","url":"http://rh651xal8.hd-bkt.clouddn.com/img/OnedriveTitle.png?image","width":1024,"height":768}}]</script>
 
 
 
