@@ -7388,7 +7388,6 @@ h1.title {
   text-align: center;
   font-size: 2rem !important;
   font-weight: 600;
-  font-family: "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Helvetica, monospace;
 }
 h1.title.common_read_h1 {
   text-align: center !important;
@@ -7396,7 +7395,6 @@ h1.title.common_read_h1 {
 }
 .note strong {
   font-size: 1.5rem;
-  font-family: 'SentyGoldenBell';
 }
 article p {
   line-height: 2 !important;
