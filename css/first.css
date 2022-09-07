@@ -932,14 +932,14 @@ button {
 }
 @font-face {
   font-family: 'UbuntuMono';
-  src: url("https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/UbuntuMono/UbuntuMono-Regular.ttf");
+  src: url("https://cdn.nxingcloud.co/assets/fonts/SourceHan/SourceHanSerifCN-Medium2-beeeeffc.woff2");
   font-weight: 'normal';
   font-style: 'normal';
   font-display: swap;
 }
 @font-face {
   font-family: 'HanYiCuFangSongJian';
-  src: url("https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/UbuntuMono/UbuntuMono-Regular.ttf");
+  src: url("https://cdn.nxingcloud.co/assets/fonts/SourceHan/SourceHanSerifCN-Medium2-beeeeffc.woff2");
   font-weight: 'normal';
   font-style: 'normal';
   font-display: swap;
