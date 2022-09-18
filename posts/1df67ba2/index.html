@@ -5,8 +5,8 @@
   <meta name="Volantis" content="5.7.4">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="https://nxingcloud.co/archives/2022/05/"/>
+  
+  <link rel="canonical" href="https://nxingcloud.co/posts/1df67ba2/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -32,19 +32,21 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>归档：2022/5 - 南星有话说</title>
-  <meta name="keywords" content="NXing,NXingcloud,南星,博客,Blog,C++,C语言,Python,网络技术,volantis">
-  <meta desc name="description" content="这里是南星的小站，用来做我的学习记录记录，不定时分享C语言，C++，Python，计算机网络，及日常使用技巧等方面的内容 - 南星&NXing - 南星有话说">
+  <title>使用PHPMailer为自己的PHP项目配置邮件客户端 - 南星有话说</title>
+  <meta name="keywords" content="PHPMailer, 邮件, PHP,NXing,NXingcloud,南星,博客,Blog,C++,C语言,Python,网络技术,volantis">
+  <meta desc name="description" content="开源的PHPMailer简洁易用，相对于PHP官方文档提供的mail()需要一个已安装且正在运行的邮件系统，以便使邮件函数可用，选择更强大易用的PHPMailer无疑一个更为明智的选择。 - 南星&NXing - 南星有话说">
   
-<meta property="og:type" content="website">
-<meta property="og:title" content="南星有话说">
-<meta property="og:url" content="https://nxingcloud.co/archives/2022/05/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="使用PHPMailer为自己的PHP项目配置邮件客户端">
+<meta property="og:url" content="https://nxingcloud.co/posts/1df67ba2/index.html">
 <meta property="og:site_name" content="南星有话说">
-<meta property="og:description" content="这里是南星的小站，用来做我的学习记录记录，不定时分享C语言，C++，Python，计算机网络，及日常使用技巧等方面的内容">
+<meta property="og:description" content="开源的PHPMailer简洁易用，相对于PHP官方文档提供的mail()需要一个已安装且正在运行的邮件系统，以便使邮件函数可用，选择更强大易用的PHPMailer无疑一个更为明智的选择。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://cdn.nxingcloud.co/images/logo/icon/logo_192x192-1bbba21164f88b5483eb56300e2b168d-9871be.png">
+<meta property="article:published_time" content="2022-09-18T13:29:19.000Z">
+<meta property="article:modified_time" content="2022-09-18T13:29:19.000Z">
 <meta property="article:author" content="南星&amp;NXing">
-<meta property="article:tag" content="NXing,NXingcloud,南星,博客,Blog,C++,C语言,Python,网络技术,volantis">
+<meta property="article:tag" content="PHPMailer, 邮件, PHP">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://cdn.nxingcloud.co/images/logo/icon/logo_192x192-1bbba21164f88b5483eb56300e2b168d-9871be.png">
   <style>
@@ -2326,7 +2328,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <!-- Custom Files bodyBegin begin-->
     
     <!-- Custom Files bodyBegin end-->
-    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow floatable blur " style='opacity: 0' >
+    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow floatable blur show" style='opacity: 0' >
   <div class='container'>
   <div id='wrapper'>
     <div class='nav-sub'>
@@ -2561,7 +2563,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="half" class='cover-wrapper  dock' style="display: ;">
+      <div id="none" class='cover-wrapper post dock' style="display: none;">
         
   <div class='cover-bg lazyload placeholder' data-bg="https://api.nxingcloud.co/bing/?rand=true"></div>
 
@@ -2626,22 +2628,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="body-wrapper">
           
 <div id="l_main" class=''>
-	
-		
-  <section class="post-list">
-    
-      
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://nxingcloud.co/posts/a3ad802e/">
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow article-type-post" id="post" itemscope itemprop="blogPost">
+  <link itemprop="mainEntityOfPage" href="https://nxingcloud.co/posts/1df67ba2/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="南星有话说">
   </span>
@@ -2650,65 +2638,509 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <meta itemprop="description" content="这里是南星的小站，用来做我的学习记录记录，不定时分享C语言，C++，Python，计算机网络，及日常使用技巧等方面的内容">
   </span>
   
-  
-  
-    <div class='headimg-div'>
-      <a class='headimg-a' href="/posts/a3ad802e/">
-        <img itemprop="image" class='headimg' alt="Onedrive直链提取+IDM实现满速下载！" src='https://cdn.nxingcloud.co/images/posts/one/headmage-bd3839b8.png?image'/>
-      </a>
-    </div>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/posts/a3ad802e/"  itemprop="url">
-        Onedrive直链提取+IDM实现满速下载！
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      <p>OneDrive虽然嫖到了5T但是速度慢到极致是不是很不甘心，心里发痒？别急！OneDrive的真正实力远超你想象！今天，我就来教大家如何用oneindex+IDM让你的OneDrive下载速度爆表。话不多说，正文开整！！！</p>
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2022-05-16T02:39:16+08:00">2022-05-16</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/Onedrive/">Onedrive</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/Onedrive/" itemprop="url"><span itemprop="name">Onedrive</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/posts/a3ad802e/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
 
+
+  
+    <span hidden>
+      <meta itemprop="image" content="https://cdn.nxingcloud.co/images/logo/icon/logo_192x192-1bbba21164f88b5483eb56300e2b168d-9871be.png">
+    </span>
+  
+  <div class="article-meta" id="top">
+    
+    
+    
+      <h1 class="title" itemprop="name headline">
+        使用PHPMailer为自己的PHP项目配置邮件客户端
+      </h1>
+      <div class='new-meta-box'>
+        
+          
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <a itemprop="url" class='author' href="/" rel="nofollow">
+    <img itemprop="image" src="https://cdn.nxingcloud.co/images/logo/gravatar/circleedgelogo-855aa71c.png?image" class="lazyload" data-srcset="https://cdn.nxingcloud.co/images/logo/gravatar/circleedgelogo-855aa71c.png?image" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">南星&NXing</p>
+  </a>
 </div>
 
+          
+        
+          
+            
+  <div class='new-meta-item category'>
+    <i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i>
+    <a class="category-link" href="/categories/PHP/">PHP</a>
+    
+      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+        <a href="/categories/PHP/" itemprop="url"><span itemprop="name">PHP</span></a>
+      </span>
+    
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2022-09-18T21:29:19+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2022年9月18日</p>
+  </a>
+</div>
+
+          
+        
+          
+             
+  <div class="new-meta-item comments-count"> 
+     
+    <a href="/posts/1df67ba2/#comments"> 
+      <i class="fa-solid fa-comment-dots fa-fw"></i> 
+      <p> 
+        <span data-page-key="/posts/1df67ba2/" id="ArtalkCount"> 
+          <i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i>
+        </span> 
+         
+          <span class="leancloud-comments-count">&nbsp;条评论</span> 
+         
+      </p>       
+    </a> 
+  </div> 
+ 
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
+      </div>
+    
+  </div>
+
+
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    <h2 id="一、引言"><a href="#一、引言" class="headerlink" title="一、引言"></a>一、引言</h2><p>最近在对一个停止维护的必应每日壁纸源码进行二次开发，在开发过程期间难免会有报错。为了避免每次报错的时候还需要去翻阅日志，就想到了用邮件把每天的自动抓取结果发送到自己的邮箱里。每次运行的结果都能及时的收到通知。本想PHPMailer的封装教程在网上已经不再罕见，去翻阅的时候却发现大部分的封装教程或多或少都有点过时了。索性我直接去翻阅了官方文档，按照官方的使用建议，去除了不必要的配置内容并进行了封装，也写下了比较符合现在PHPMailer的封装教程以供网友们查阅。</p>
+<h2 id="二、PHPMailer下载"><a href="#二、PHPMailer下载" class="headerlink" title="二、PHPMailer下载"></a>二、PHPMailer下载</h2><p>PHPMailer的下载有两种方式，直接下载GitHub源代码或通过Composer安装。</p>
+<p>这里我以Github源码下载方式以及163邮箱配置为例。</p>
+<h3 id="2-0-示例版本"><a href="#2-0-示例版本" class="headerlink" title="2.0 示例版本"></a>2.0 示例版本</h3><p>今天是2022-09-18，我所使用的版本为PHPMailer 6.6.4</p>
+<h3 id="2-1-从-github-上下载"><a href="#2-1-从-github-上下载" class="headerlink" title="2.1 从 github 上下载"></a>2.1 从 github 上下载</h3><p>GitHub链接：<a target="_blank" rel="noopener" href="https://github.com/PHPMailer/PHPMailer/">https://github.com/PHPMailer/PHPMailer/</a></p>
+<h3 id="2-2-通过Composer安装"><a href="#2-2-通过Composer安装" class="headerlink" title="2.2 通过Composer安装"></a>2.2 通过Composer安装</h3><pre><code>composer require phpmailer/phpmailer
+</code></pre>
+<h3 id="2-3-下载PHPMailer-6-6-4（可选）"><a href="#2-3-下载PHPMailer-6-6-4（可选）" class="headerlink" title="2.3 下载PHPMailer 6.6.4（可选）"></a>2.3 下载PHPMailer 6.6.4（可选）</h3><p>为防止本文配置适用性降低，推荐大家下载与本文版本相同的6.6.4版本。<br>本文所用源码下载链接在文末给出。</p>
+<h3 id="2-4-所需文件"><a href="#2-4-所需文件" class="headerlink" title="2.4 所需文件"></a>2.4 所需文件</h3><p>下载完成后的目录结构应为如下所示，我们只需要<code>src</code>目录下的<code>Exception.php</code>、<code>PHPMailer.php</code>、<code>SMTP.php</code>三个文件，并将它放入项目目录中。</p>
+<pre><code>PHPMailer
+│ 
+│  COMMITMENT
+│  composer.json
+│  darknetf.txt
+│  get_oauth_token.php
+│  LICENSE
+│  README.md
+│  SECURITY.md
+│  VERSION
+│  
+├─language
+│      phpmailer.lang-zh.php
+│      phpmailer.lang-zh_cn.php
+│      
+└─src
+        Exception.php
+        OAuth.php
+        OAuthTokenProvider.php
+        PHPMailer.php
+        POP3.php
+        SMTP.php
+</code></pre>
+<h2 id="三、配置与使用"><a href="#三、配置与使用" class="headerlink" title="三、配置与使用"></a>三、配置与使用</h2><h3 id="3-0-环境要求"><a href="#3-0-环境要求" class="headerlink" title="3.0 环境要求"></a>3.0 环境要求</h3><p>注意，在使用之前，应检查PHP的openssl扩展与sockets扩展是否已开启。</p>
+<h3 id="3-1-官方示例"><a href="#3-1-官方示例" class="headerlink" title="3.1 官方示例"></a>3.1 官方示例</h3><pre><code class="PHP">&lt;?php
+//Import PHPMailer classes into the global namespace
+//These must be at the top of your script, not inside a function
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
+
+//Load Composer&#39;s autoloader
+require &#39;vendor/autoload.php&#39;;
+
+//Create an instance; passing `true` enables exceptions
+$mail = new PHPMailer(true);
+
+try &#123;
+    //Server settings
+    $mail-&gt;SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
+    $mail-&gt;isSMTP();                                            //Send using SMTP
+    $mail-&gt;Host       = &#39;smtp.example.com&#39;;                     //Set the SMTP server to send through
+    $mail-&gt;SMTPAuth   = true;                                   //Enable SMTP authentication
+    $mail-&gt;Username   = &#39;user@example.com&#39;;                     //SMTP username
+    $mail-&gt;Password   = &#39;secret&#39;;                               //SMTP password
+    $mail-&gt;SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
+    $mail-&gt;Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+
+    //Recipients
+    $mail-&gt;setFrom(&#39;from@example.com&#39;, &#39;Mailer&#39;);
+    $mail-&gt;addAddress(&#39;joe@example.net&#39;, &#39;Joe User&#39;);     //Add a recipient
+    $mail-&gt;addAddress(&#39;ellen@example.com&#39;);               //Name is optional
+    $mail-&gt;addReplyTo(&#39;info@example.com&#39;, &#39;Information&#39;);
+    $mail-&gt;addCC(&#39;cc@example.com&#39;);
+    $mail-&gt;addBCC(&#39;bcc@example.com&#39;);
+
+    //Attachments
+    $mail-&gt;addAttachment(&#39;/var/tmp/file.tar.gz&#39;);         //Add attachments
+    $mail-&gt;addAttachment(&#39;/tmp/image.jpg&#39;, &#39;new.jpg&#39;);    //Optional name
+
+    //Content
+    $mail-&gt;isHTML(true);                                  //Set email format to HTML
+    $mail-&gt;Subject = &#39;Here is the subject&#39;;
+    $mail-&gt;Body    = &#39;This is the HTML message body &lt;b&gt;in bold!&lt;/b&gt;&#39;;
+    $mail-&gt;AltBody = &#39;This is the body in plain text for non-HTML mail clients&#39;;
+
+    $mail-&gt;send();
+    echo &#39;Message has been sent&#39;;
+&#125; catch (Exception $e) &#123;
+    echo &quot;Message could not be sent. Mailer Error: &#123;$mail-&gt;ErrorInfo&#125;&quot;;
+&#125;
+</code></pre>
+<h3 id="3-2-个人使用及封装"><a href="#3-2-个人使用及封装" class="headerlink" title="3.2 个人使用及封装"></a>3.2 个人使用及封装</h3><p>以下为我个人的使用及封装建议</p>
+<p>mail.php</p>
+<pre><code class="PHP">&lt;?php
+
+/**
+* 邮件发送
+* @param $to 接收人
+* @param string $subject 邮件标题
+* @param string $content 邮件内容(html模板渲染后的内容)
+* @throws Exception
+* @throws phpmailerException
+*/
+// Import PHPMailer classes into the global namespace
+// These must be at the top of your script, not inside a function
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+use PHPMailer\PHPMailer\SMTP;
+
+function send_email($to=&quot;&quot;,$subject=&#39;&#39;,$content=&#39;&lt;h1&gt;Hello World&lt;/h1&gt;&#39;)&#123;
+    // 引入PHPMailer的核心文件
+    require_once(dirname(__FILE__).&quot;/phpmailer/PHPMailer.php&quot;); //这里的三个文件应填入你的PHPMailer放置目录
+    require_once(dirname(__FILE__).&quot;/phpmailer/Exception.php&quot;);
+    require_once(dirname(__FILE__).&quot;/phpmailer/SMTP.php&quot;);
+    
+    $config = include &#39;config.php&#39;;
+    //初始化邮箱配置信息---在Config.php文件中进行配置
+    $mailUsername = $config[&#39;mailUsername&#39;]; //这里应
+    $mailPassword = $config[&#39;mailPassword&#39;];
+    $mailFromName = $config[&#39;mailFromName&#39;];
+    $mailHost = $config[&#39;mailHost&#39;];
+    $mailPort = $config[&#39;mailPort&#39;];
+    
+    // 实例化PHPMailer核心类
+    $mail = new PHPMailer(true);
+
+    try &#123;
+           // 是否启用smtp的debug进行调试 开发环境建议开启 生产环境注释掉即可 默认关闭debug调试模式
+           // 开启debug调试模式在报错时会给出更多错误信息，数值越高信息越详细
+          //Enable SMTP debugging
+          // 0 = off (for production use)
+          // 1 = client messages
+          // 2 = client and server messages
+          //$mail-&gt;SMTPDebug = 2;
+          //调试输出格式
+          //$mail-&gt;Debugoutput = &#39;html&#39;;
+
+          //客户端配置---Server settings
+          $mail-&gt;isSMTP(); // 使用smtp鉴权方式发送邮件
+          $mail-&gt;SMTPAuth = true; // smtp需要鉴权 这个必须是true
+          $mail-&gt;Host = $mailHost; // 链接邮箱的服务器地址
+          $mail-&gt;Username = $mailUsername; // smtp登录的账号，163邮箱与QQ邮箱均可
+          $mail-&gt;Password = $mailPassword; // smtp登录的密码，此处应邮箱账号开启SMTP服务生成的授权码
+          $mail-&gt;SMTPSecure = &#39;ssl&#39;; // 设置使用ssl加密方式登录鉴权
+          $mail-&gt;Port = $mailPort; // 设置ssl连接smtp服务器的远程服务器端口号
+          $mail-&gt;CharSet = &#39;UTF-8&#39;; // 设置发送的邮件的编码
+
+          //邮件账户设置---Recipients
+          $mail-&gt;setFrom($mailUsername, $mailFromName); // 设置发件人邮箱地址与昵称
+          $mail-&gt;addReplyTo($mailUsername, [&#39;Information&#39;]); // 设置回复时的用户与昵称，应与发件人相同 
+          
+          // 设置收件人邮箱地址
+          // $mail-&gt;addAddress(&#39;joe@example.net&#39;, [&#39;Joe User&#39;]); // 收件人配置示例，昵称配置可选
+          // 有多个收件人时添加多个收件人，效果等同于多个$mail-&gt;addAddress()
+          if(is_array($to))
+          &#123;
+              foreach($to as $v)
+              &#123;
+                  $mail-&gt;addAddress($v);
+              &#125;
+          &#125;else&#123;
+              $mail-&gt;addAddress($to);
+          &#125;
+
+          //邮件内容---Content
+          $mail-&gt;isHTML(true); // 邮件正文是否为html编码
+          $mail-&gt;Subject = $subject; // 所要发送邮件的主题
+          // 添加邮件正文
+          // 这里我需要挨个发送多条消息，发送很多条邮件又很麻烦，索性就搞了一个数组
+          // 每条消息添加到数组中，最后以&lt;br&gt;换行符合成一个字符串
+          // 如果不是数组也无需改动
+          if(is_array($content))
+          &#123;
+              $allcontent = implode(&#39;&lt;br&gt;&#39;, $content);  // 将一维数组以&lt;br&gt;分隔组合成一个字符串
+              $mail-&gt;Body = $allcontent;
+          &#125;else&#123;
+              $mail-&gt;Body = $content;
+          &#125;
+          
+          //附加信息，可以省略
+          //$mail-&gt;AltBody = &quot;This is the body in plain text for non-HTML mail clients&quot;;
+          
+          //附件
+          //$mail-&gt;addAttachment(&#39;./example.pdf&#39;);  // 若需要发送附件就取消此条注释，将路径改为需要发送文件的路径。
+          
+          // 发送邮件 返回状态
+          $mail-&gt;send();
+          echo &#39;&lt;br&gt;邮件发送成功！&#39;;
+        &#125; catch (Exception $e) &#123;
+          echo &quot;&lt;br&gt;Message could not be sent. Mailer Error: &#123;$mail-&gt;ErrorInfo&#125;&quot;;
+    &#125;
+&#125;
+?&gt;
+</code></pre>
+<p>Config.php</p>
+<pre><code class="PHP">&lt;?php
+/*
+Copyright © 2022 by nxingcloud@163.com
+*/
+// 邮箱配置信息
+
+// **********发件人配置************
+$config[&#39;mailUsername&#39;]  = &#39;********&#39;; //邮箱发件人账号
+$config[&#39;mailPassword&#39;]  = &#39;********&#39;; //邮箱发件人SMTP密码
+$config[&#39;mailFromName&#39;]  = &#39;********&#39;; //邮箱发件人昵称
+$config[&#39;mailHost&#39;]      = &#39;********&#39;; //邮箱服务器
+$config[&#39;mailPort&#39;]      = &#39;********&#39;; //邮箱端口号，以163为例，若不使用SSL加密方式则端口号为25，否则为465
+
+// ***********发件内容及收件人配置******
+$config[&#39;mailReceiver&#39;]  = &#39;********&#39;; //收件人配置，可设置单个收件人，若需多个收件人则以数组[&#39;***&#39;, &#39;***&#39;]形式。
+$config[&#39;mailSubject&#39;]   = &#39;********&#39;; //所发邮件主题
+$config[&#39;mailContent&#39;]   = &#39;********&#39;; //所发邮件内容
+
+return $config;
+
+?&gt;
+</code></pre>
+<h3 id="3-3-使用方法"><a href="#3-3-使用方法" class="headerlink" title="3.3 使用方法"></a>3.3 使用方法</h3><p>1、将PHPMailer的三个<code>src</code>文件放入项目目录，并在<code>mail.php</code>当中修改引入路径。</p>
+<p>2、在<code>config.php</code>中填入所需相关配置。</p>
+<p>3、将<code>mail.php</code>引入自己项目PHP文件中，使用<code>sent_email()</code>函数即可。</p>
+<p>4、示例：</p>
+<pre><code class="PHP">
+&lt;?php
+
+//引入配置文件
+$config = include &#39;config.php&#39;;
+
+// 引入邮箱类
+include &#39;mail.php&#39;;
+
+//初始化邮件发送信息及收件人
+$mailReceiver = $config[&#39;mailReceiver&#39;];
+$mailSubject = $config[&#39;mailSubject&#39;];
+$mailContent = $config[&#39;mailContent&#39;];
+
+send_email($to=$mailReceiver, $subject=$mailSubject, $content=$mailContent);
+
+?&gt;
+</code></pre>
+<h2 id="四、结语"><a href="#四、结语" class="headerlink" title="四、结语"></a>四、结语</h2><p>此文为个人做项目时的随手记录，苦恼于网络教程均不再使用，便写下此文展示最新的配置过程以供网友们查阅。</p>
+<p>本文全部源码的下载链接：<a target="_blank" rel="noopener" href="https://pan.nxingcloud.co/#s/8hKsZIaQ">https://pan.nxingcloud.co/#s/8hKsZIaQ</a></p>
+
+  </div>
+  
+  
+    
+    <div class='footer'>
+       <!-- 参考资料、相关资料等 -->
+      
+       <!-- 相关文章 -->
+      
+      <!-- 版权声明组件 -->
+      
+        
+          <div class='copyright'>
+            <blockquote>
+              
+                
+                  <p>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
+
+                
+              
+                
+                  <p>本文永久链接是：<a href="https://nxingcloud.co/posts/1df67ba2/">https://nxingcloud.co/posts/1df67ba2/</a></p>
+                
+              
+            </blockquote>
           </div>
         
       
-    
-  </section>
+      <!-- 打赏组件 -->
+      
+    </div>
+  
   
     
+
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-09-18T21:29:19+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2022年9月18日</p>
+  </a>
+</div>
+
+        
+      
+        
+          
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/PHPMailer-%E9%82%AE%E4%BB%B6-PHP/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>PHPMailer, 邮件, PHP</p></a></div>
+  <span hidden itemprop="keywords">PHPMailer, 邮件, PHP</span>
+
+
+        
+      
+        
+          
+
+
+<div class="new-meta-item browse">
+  <a class='notlink'>
+    <p>
+      <i class="fa-solid fa-eye fa-fw" aria-hidden="true"></i>
+      
+      <span id="artalk_visitors" data-page-key="/posts/1df67ba2/">
+        <i class="fa-light fa-loader fa-spin fa-fw" aria-hidden="true"></i>
+      </span>
+      
+      <span>次浏览</span>
+    </p>
+  </a>
+</div>
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://nxingcloud.co/posts/1df67ba2/&title=使用PHPMailer为自己的PHP项目配置邮件客户端 - 南星有话说&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://nxingcloud.co/posts/1df67ba2/&title=使用PHPMailer为自己的PHP项目配置邮件客户端 - 南星有话说&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://nxingcloud.co/posts/1df67ba2/&title=使用PHPMailer为自己的PHP项目配置邮件客户端 - 南星有话说&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+    <!-- Custom Files bottomMeta begin -->
+    
+    <!-- Custom Files bottomMeta end -->
+  </div>
+
+
+  
+  
+
+  
+    <div class="prev-next">
+      
+      
+        <a class='next' href='/posts/a3ad802e/'>
+          <p class='title'>Onedrive直链提取+IDM实现满速下载！<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>一、引言OneDrive虽然嫖到了5T但是速度慢到极致是不是很不甘心，心里发痒？别急！OneDrive的真正实力远超你想象！今天，我就来教大家如何用oneindex+IDM让你的OneDrive...</p>
+        </a>
+      
+    </div>
+  
+  <!-- Custom Files postEnd begin-->
+  
+  <!-- Custom Files postEnd end-->
+</article>
+
+
   
 
 
-	
+  <article class="post white-box shadow" id="comments">
+    <span hidden>
+      <meta itemprop="discussionUrl" content="/posts/1df67ba2/index.html#comments">
+    </span>
+    <p ct><i class='fa-solid fa-comments'></i> 评论</p>
+    
+    
+    <div class="comment-policy">
+      <div class="content">
+        <p class="comment-policy-title">《南星有话说》评论政策</p>
+        <p class="comment-policy-link">
+          请在评论前阅读我们的
+          <a href="https://nxingcloud.co/pages/policy/#%E4%BA%8C%E3%80%81%E8%AF%84%E8%AE%BA%E8%A7%84%E5%88%99" target="_blank" rel="noopener noreferrer" class="policy-link">
+            评论政策
+          </a>
+          。
+        </p>
+        <p></p>
+      </div>
+    </div>
+    <div id="layoutHelper-comments"></div>
+
+  </article>
+
+
+
+
+
+
 </div>
 <aside id='l_side' itemscope itemtype="http://schema.org/WPSideBar">
   
@@ -2717,141 +3149,48 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       
-<section class="widget blogger desktop pjax">
-  <div class='content'>
-    
-      
-        <a class='avatar flat-box circle' href='/about/'>
-          <img no-lazy src='https://cdn.nxingcloud.co/images/logo/gravatar/circleedgelogo-855aa71c.png?image'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-          <h2>南星&NXing</h2>
-        
-        
-          <p>Code Creates Life.</p>
-
-        
-        
-          <p><span id="jinrishici-sentence">南星有话说</span></p>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="https://me.nxingcloud.co/"
-              class="social fa-solid fa-circle-user flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="mailto:z1304242002@163.com"
-              class="social fa-solid fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/ZhangXQA/"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://music.163.com/#/playlist?id=647135926/"
-              class="social fa-solid fa-headphones-alt flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget category desktop pjax">
-    
-  <header>
-    
-      <a href='/categories/'><i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box"
-            title="/categories/Onedrive/" href="/categories/Onedrive/"
-            active-action="action-categoriesOnedrive"
-            ><div class='name'>Onedrive</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/PHP/" href="/categories/PHP/"
-            active-action="action-categoriesPHP"
-            ><div class='name'>PHP</div><div class='badge'>(1)</div></a></li>
-        
-      </ul>
-    </div>
-  </section>
-
-
-    
-  
-
-  
-    
-    
-      
-
-<section class="widget desktop mobile pjax">
-  
-  <header>
-    
-      <i class="fa-solid fa-clock WISTERIA fa-fw" aria-hidden="true"></i><span class='name'>最近更新</span>
-    
-  </header>
-
-
-  <div class='content'>
-    <ul class="list entry navigation"><li><a class="widget-last" href="/posts/1df67ba2/"><div class="item"><time>2022-09-18</time><span>PHP</span></div><span>使用PHPMailer为自己的PHP项目配置邮件客户端</span></a></li><li><a class="widget-last" href="/posts/a3ad802e/"><div class="item"><time>2022-08-31</time><span>Onedrive</span></div><span>Onedrive直链提取+IDM实现满速下载！</span></a></li></ul>
-  </div>
-</section>
-
     
   
 
 
 <div class="widget-sticky pjax">
 
+  
+  
+
+
+  <section class="widget toc-wrapper desktop mobile " id="toc-div" >
+    
+  <header>
+    
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E5%BC%95%E8%A8%80"><span class="toc-text">一、引言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81PHPMailer%E4%B8%8B%E8%BD%BD"><span class="toc-text">二、PHPMailer下载</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-0-%E7%A4%BA%E4%BE%8B%E7%89%88%E6%9C%AC"><span class="toc-text">2.0 示例版本</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-%E4%BB%8E-github-%E4%B8%8A%E4%B8%8B%E8%BD%BD"><span class="toc-text">2.1 从 github 上下载</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-%E9%80%9A%E8%BF%87Composer%E5%AE%89%E8%A3%85"><span class="toc-text">2.2 通过Composer安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3-%E4%B8%8B%E8%BD%BDPHPMailer-6-6-4%EF%BC%88%E5%8F%AF%E9%80%89%EF%BC%89"><span class="toc-text">2.3 下载PHPMailer 6.6.4（可选）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-4-%E6%89%80%E9%9C%80%E6%96%87%E4%BB%B6"><span class="toc-text">2.4 所需文件</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E9%85%8D%E7%BD%AE%E4%B8%8E%E4%BD%BF%E7%94%A8"><span class="toc-text">三、配置与使用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-0-%E7%8E%AF%E5%A2%83%E8%A6%81%E6%B1%82"><span class="toc-text">3.0 环境要求</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-%E5%AE%98%E6%96%B9%E7%A4%BA%E4%BE%8B"><span class="toc-text">3.1 官方示例</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-%E4%B8%AA%E4%BA%BA%E4%BD%BF%E7%94%A8%E5%8F%8A%E5%B0%81%E8%A3%85"><span class="toc-text">3.2 个人使用及封装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-3-%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95"><span class="toc-text">3.3 使用方法</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E7%BB%93%E8%AF%AD"><span class="toc-text">四、结语</span></a></li></ol>
+    </div>
+  </section>
+
+  
+
 </div>
 
 
 <!-- 没有 pjax 占位会报错 万恶的 pjax -->
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
 
   <div class="pjax">
     <!-- pjax占位 -->
@@ -2879,13 +3218,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </aside>
 
 
+
           <!--此文件用来存放一些不方便取值的变量-->
 <!--思路大概是将值藏到重加载的区域内-->
 
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -2894,14 +3234,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     // header
     var l_header=document.getElementById("l_header");
     
-    l_header.classList.remove("show");
+    l_header.classList.add("show");
     
     
       // cover
       var cover_wrapper=document.querySelector('#l_cover .cover-wrapper');
       var scroll_down=document.getElementById('scroll-down');
-      cover_wrapper.id="half";
-      cover_wrapper.style.display="";
+      cover_wrapper.id="none";
+      cover_wrapper.style.display="none";
       scroll_down.style.display="none";
     
   
@@ -3749,6 +4089,25 @@ document.addEventListener("DOMContentLoaded", function () {
 <!-- pjax 标签必须存在于所有页面 否则 pjax error -->
 <pjax>
 
+        <style>
+  #post-body p {
+    text-indent: 2em;
+  }
+  #post-body .new-meta-box p,
+  #post-body .note p,
+  #post-body .prev-next p,
+  #post-body .tag p,
+  #post-body blockquote p,
+  #post-body details p,
+  #post-body p.p,
+  #post-body .tab-pane .checkbox
+  #post-body section p {
+    text-indent: initial;
+  }
+</style>
+
+
+
 </pjax>
 
 <script>
@@ -3880,7 +4239,7 @@ document.addEventListener("DOMContentLoaded", function () {
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"南星有话说","url":"https://nxingcloud.co/","logo":{"@type":"ImageObject","url":"https://cdn.nxingcloud.co/images/logo/icon/logo_192x192-1bbba21164f88b5483eb56300e2b168d-9871be.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"南星&NXing","image":{"@type":"ImageObject","url":"https://cdn.nxingcloud.co/images/logo/icon/logo_192x192-1bbba21164f88b5483eb56300e2b168d-9871be.png"},"url":"https://nxingcloud.co/","sameAs":["https://github.com/ZhangXQA"],"description":"这里是南星的小站，用来做我的学习记录记录，不定时分享C语言，C++，Python，计算机网络，及日常使用技巧等方面的内容"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://nxingcloud.co/","name":"南星有话说"}},{"@type":"ListItem","position":2,"item":{"@id":"https://nxingcloud.co/archives/","name":"Archive"}},{"@type":"ListItem","position":3,"item":{"@id":"https://nxingcloud.co/archives/2022/","name":"2022年"}},{"@type":"ListItem","position":4,"item":{"@id":"https://nxingcloud.co/archives/2022/5/","name":"5月"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"南星有话说","url":"https://nxingcloud.co/","keywords":"NXing,NXingcloud,南星,博客,Blog,C++,C语言,Python,网络技术,volantis","description":"这里是南星的小站，用来做我的学习记录记录，不定时分享C语言，C++，Python，计算机网络，及日常使用技巧等方面的内容","author":{"@type":"Person","name":"南星&NXing","image":{"@type":"ImageObject","url":"https://cdn.nxingcloud.co/images/logo/icon/logo_192x192-1bbba21164f88b5483eb56300e2b168d-9871be.png"},"url":"https://nxingcloud.co/","description":"这里是南星的小站，用来做我的学习记录记录，不定时分享C语言，C++，Python，计算机网络，及日常使用技巧等方面的内容"},"publisher":{"@type":"Organization","name":"南星有话说","url":"https://nxingcloud.co/","logo":{"@type":"ImageObject","url":"https://cdn.nxingcloud.co/images/logo/icon/logo_192x192-1bbba21164f88b5483eb56300e2b168d-9871be.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://nxingcloud.co?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"这里是南星的小站，用来做我的学习记录记录，不定时分享C语言，C++，Python，计算机网络，及日常使用技巧等方面的内容","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"南星&NXing","image":{"@type":"ImageObject","url":"https://cdn.nxingcloud.co/images/logo/icon/logo_192x192-1bbba21164f88b5483eb56300e2b168d-9871be.png"},"url":"https://nxingcloud.co/"},"publisher":{"@type":"Organization","name":"南星有话说","logo":{"@type":"ImageObject","url":"https://cdn.nxingcloud.co/images/logo/icon/logo_192x192-1bbba21164f88b5483eb56300e2b168d-9871be.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://cdn.nxingcloud.co/images/logo/icon/logo_192x192-1bbba21164f88b5483eb56300e2b168d-9871be.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"南星有话说","url":"https://nxingcloud.co/","logo":{"@type":"ImageObject","url":"https://cdn.nxingcloud.co/images/logo/icon/logo_192x192-1bbba21164f88b5483eb56300e2b168d-9871be.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"南星&NXing","image":{"@type":"ImageObject","url":"https://cdn.nxingcloud.co/images/logo/icon/logo_192x192-1bbba21164f88b5483eb56300e2b168d-9871be.png"},"url":"https://nxingcloud.co/","sameAs":["https://github.com/ZhangXQA"],"description":"这里是南星的小站，用来做我的学习记录记录，不定时分享C语言，C++，Python，计算机网络，及日常使用技巧等方面的内容"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://nxingcloud.co/","name":"南星有话说"}},{"@type":"ListItem","position":2,"item":{"@id":"https://nxingcloud.co/categories/PHP/","name":"PHP"}},{"@type":"ListItem","position":3,"item":{"@id":"https://nxingcloud.co/posts/1df67ba2/","name":"使用PHPMailer为自己的PHP项目配置邮件客户端"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"南星有话说","url":"https://nxingcloud.co/","keywords":"NXing,NXingcloud,南星,博客,Blog,C++,C语言,Python,网络技术,volantis","description":"这里是南星的小站，用来做我的学习记录记录，不定时分享C语言，C++，Python，计算机网络，及日常使用技巧等方面的内容","author":{"@type":"Person","name":"南星&NXing","image":{"@type":"ImageObject","url":"https://cdn.nxingcloud.co/images/logo/icon/logo_192x192-1bbba21164f88b5483eb56300e2b168d-9871be.png"},"url":"https://nxingcloud.co/","description":"这里是南星的小站，用来做我的学习记录记录，不定时分享C语言，C++，Python，计算机网络，及日常使用技巧等方面的内容"},"publisher":{"@type":"Organization","name":"南星有话说","url":"https://nxingcloud.co/","logo":{"@type":"ImageObject","url":"https://cdn.nxingcloud.co/images/logo/icon/logo_192x192-1bbba21164f88b5483eb56300e2b168d-9871be.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://nxingcloud.co?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"使用PHPMailer为自己的PHP项目配置邮件客户端","description":"开源的PHPMailer简洁易用，相对于PHP官方文档提供的mail()需要一个已安装且正在运行的邮件系统，以便使邮件函数可用，选择更强大易用的PHPMailer无疑一个更为明智的选择。","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://nxingcloud.co/posts/1df67ba2/"},"author":{"@type":"Person","name":"南星&NXing","image":{"@type":"ImageObject","url":"https://cdn.nxingcloud.co/images/logo/icon/logo_192x192-1bbba21164f88b5483eb56300e2b168d-9871be.png"},"url":"https://nxingcloud.co/"},"publisher":{"@type":"Organization","name":"南星有话说","logo":{"@type":"ImageObject","url":"https://cdn.nxingcloud.co/images/logo/icon/logo_192x192-1bbba21164f88b5483eb56300e2b168d-9871be.png","width":192,"height":192}},"url":"https://nxingcloud.co/posts/1df67ba2/","wordCount":0,"datePublished":"2022-09-18T13:29:19.000Z","dateModified":"2022-09-18T13:29:19.000Z","articleSection":"PHP","keywords":"PHPMailer, 邮件, PHP","image":{"@type":"ImageObject","url":"https://cdn.nxingcloud.co/images/logo/icon/logo_192x192-1bbba21164f88b5483eb56300e2b168d-9871be.png","width":192,"height":192}}]</script>
 
 
 
