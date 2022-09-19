@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="https://nxingcloud.co/tags/phpmailer-邮件-php/"/>
+  <link rel="canonical" href="https://nxingcloud.co/tags/phpmailer-邮件-php-封装/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -32,13 +32,13 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>标签：PHPMailer, 邮件, PHP - 南星有话说</title>
+  <title>标签：PHPMailer, 邮件, PHP, 封装 - 南星有话说</title>
   <meta name="keywords" content="NXing,NXingcloud,南星,博客,Blog,C++,C语言,Python,网络技术,volantis">
   <meta desc name="description" content="这里是南星的小站，用来做我的学习记录记录，不定时分享C语言，C++，Python，计算机网络，及日常使用技巧等方面的内容 - 南星&NXing - 南星有话说">
   
 <meta property="og:type" content="website">
 <meta property="og:title" content="南星有话说">
-<meta property="og:url" content="https://nxingcloud.co/tags/PHPMailer-%E9%82%AE%E4%BB%B6-PHP/index.html">
+<meta property="og:url" content="https://nxingcloud.co/tags/PHPMailer-%E9%82%AE%E4%BB%B6-PHP-%E5%B0%81%E8%A3%85/index.html">
 <meta property="og:site_name" content="南星有话说">
 <meta property="og:description" content="这里是南星的小站，用来做我的学习记录记录，不定时分享C语言，C++，Python，计算机网络，及日常使用技巧等方面的内容">
 <meta property="og:locale" content="zh_CN">
@@ -104,7 +104,7 @@ html {
   color: var(--color-text);
   width: 100%;
   height: 100%;
-  font-family: UbuntuMono, "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Menlo, Monaco, monospace, sans-serif;
+  font-family: "PingFang SC", "Varela Round", "Microsoft YaHei", Helvetica, Arial, Menlo, Monaco, monospace, sans-serif;
   font-size: 16px;
 }
 html >::-webkit-scrollbar {
@@ -515,7 +515,7 @@ button {
   margin-top: 32px;
 }
 .cover-wrapper .cover-body .title {
-  font-family: "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Helvetica, monospace;
+  font-family: "PingFang SC", "Varela Round", "Microsoft YaHei", Helvetica, Arial, Helvetica, monospace;
   font-size: 3.125rem;
   line-height: 1.2;
   text-shadow: 0 1px 2px rgba(0,0,0,0.1);
@@ -1113,7 +1113,7 @@ button {
   line-height: 60px;
   padding: 0 24px;
   font-size: 1.25rem;
-  font-family: "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Helvetica, monospace;
+  font-family: "PingFang SC", "Varela Round", "Microsoft YaHei", Helvetica, Arial, Helvetica, monospace;
 }
 .l_header #wrapper .nav-main .title img {
   height: 60px;
@@ -1124,7 +1124,7 @@ button {
 }
 .l_header .nav-sub .title {
   font-weight: bold;
-  font-family: UbuntuMono, "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Menlo, Monaco, monospace, sans-serif;
+  font-family: "PingFang SC", "Varela Round", "Microsoft YaHei", Helvetica, Arial, Menlo, Monaco, monospace, sans-serif;
   line-height: 1.2;
   max-height: 60px;
   white-space: normal;
@@ -1905,7 +1905,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: false,
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1663513131149),
+    lastupdate: new Date(1663577853102),
     sidebar: {
       for_page: ["blogger","category","lastupdate"],
       for_post: ["toc"],
@@ -2315,6 +2315,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <!-- import head_end begin -->
       <script async defer data-website-id="e3e278bf-e568-4720-a2b9-6e0eefd6d89c" src="https://uma.nxingcloud.co/xuezm.js"></script>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC&display=swap" rel="stylesheet">
   <!-- import head_end end -->
   <!-- Custom Files headEnd begin-->
   
@@ -2668,7 +2671,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
   <div class='md article-desc' itemprop="articleBody">
     
-      <p>开源的PHPMailer简洁易用，相对于PHP官方文档提供的mail()需要一个已安装且正在运行的邮件系统，以便使邮件函数可用，选择更强大易用的PHPMailer无疑一个更为明智的选择。</p>
+      <p>开源的PHPMailer简洁易用，相对于PHP官方文档提供的mail()需要一个已安装且正在运行的邮件系统，才能使邮件函数可用，选择更强大易用的PHPMailer无疑一个更为明智的选择。</p>
     
   </div>
   
@@ -3683,6 +3686,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
   <script>
 
+  volantis.css("https://unpkg.com/highlight.js@11.6.0/styles/atom-one-dark.css");
+
+
+  volantis.js("https://unpkg.com/@highlightjs/cdn-assets@11.5.1/highlight.min.js").then(()=>{
+    volantis.requestAnimationFrame(hljs.highlightAll)
+  })
+  volantis.pjax.push(()=>{
+    document.querySelectorAll('pre code').forEach((block) => {
+      hljs.highlightElement(block);
+    });
+  },"highlightjs")
 
 
   function pjax_highlightjs_copyCode(){
@@ -3881,7 +3895,7 @@ document.addEventListener("DOMContentLoaded", function () {
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"南星有话说","url":"https://nxingcloud.co/","logo":{"@type":"ImageObject","url":"https://cdn.nxingcloud.co/images/logo/icon/logo_192x192-1bbba21164f88b5483eb56300e2b168d-9871be.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"南星&NXing","image":{"@type":"ImageObject","url":"https://cdn.nxingcloud.co/images/logo/icon/logo_192x192-1bbba21164f88b5483eb56300e2b168d-9871be.png"},"url":"https://nxingcloud.co/","sameAs":["https://github.com/ZhangXQA"],"description":"这里是南星的小站，用来做我的学习记录记录，不定时分享C语言，C++，Python，计算机网络，及日常使用技巧等方面的内容"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://nxingcloud.co/","name":"南星有话说"}},{"@type":"ListItem","position":2,"item":{"@id":"https://nxingcloud.co/tags/PHPMailer, 邮件, PHP/","name":"PHPMailer, 邮件, PHP"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"南星有话说","url":"https://nxingcloud.co/","keywords":"NXing,NXingcloud,南星,博客,Blog,C++,C语言,Python,网络技术,volantis","description":"这里是南星的小站，用来做我的学习记录记录，不定时分享C语言，C++，Python，计算机网络，及日常使用技巧等方面的内容","author":{"@type":"Person","name":"南星&NXing","image":{"@type":"ImageObject","url":"https://cdn.nxingcloud.co/images/logo/icon/logo_192x192-1bbba21164f88b5483eb56300e2b168d-9871be.png"},"url":"https://nxingcloud.co/","description":"这里是南星的小站，用来做我的学习记录记录，不定时分享C语言，C++，Python，计算机网络，及日常使用技巧等方面的内容"},"publisher":{"@type":"Organization","name":"南星有话说","url":"https://nxingcloud.co/","logo":{"@type":"ImageObject","url":"https://cdn.nxingcloud.co/images/logo/icon/logo_192x192-1bbba21164f88b5483eb56300e2b168d-9871be.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://nxingcloud.co?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"这里是南星的小站，用来做我的学习记录记录，不定时分享C语言，C++，Python，计算机网络，及日常使用技巧等方面的内容","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"南星&NXing","image":{"@type":"ImageObject","url":"https://cdn.nxingcloud.co/images/logo/icon/logo_192x192-1bbba21164f88b5483eb56300e2b168d-9871be.png"},"url":"https://nxingcloud.co/"},"publisher":{"@type":"Organization","name":"南星有话说","logo":{"@type":"ImageObject","url":"https://cdn.nxingcloud.co/images/logo/icon/logo_192x192-1bbba21164f88b5483eb56300e2b168d-9871be.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://cdn.nxingcloud.co/images/logo/icon/logo_192x192-1bbba21164f88b5483eb56300e2b168d-9871be.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"南星有话说","url":"https://nxingcloud.co/","logo":{"@type":"ImageObject","url":"https://cdn.nxingcloud.co/images/logo/icon/logo_192x192-1bbba21164f88b5483eb56300e2b168d-9871be.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"南星&NXing","image":{"@type":"ImageObject","url":"https://cdn.nxingcloud.co/images/logo/icon/logo_192x192-1bbba21164f88b5483eb56300e2b168d-9871be.png"},"url":"https://nxingcloud.co/","sameAs":["https://github.com/ZhangXQA"],"description":"这里是南星的小站，用来做我的学习记录记录，不定时分享C语言，C++，Python，计算机网络，及日常使用技巧等方面的内容"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://nxingcloud.co/","name":"南星有话说"}},{"@type":"ListItem","position":2,"item":{"@id":"https://nxingcloud.co/tags/PHPMailer, 邮件, PHP, 封装/","name":"PHPMailer, 邮件, PHP, 封装"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"南星有话说","url":"https://nxingcloud.co/","keywords":"NXing,NXingcloud,南星,博客,Blog,C++,C语言,Python,网络技术,volantis","description":"这里是南星的小站，用来做我的学习记录记录，不定时分享C语言，C++，Python，计算机网络，及日常使用技巧等方面的内容","author":{"@type":"Person","name":"南星&NXing","image":{"@type":"ImageObject","url":"https://cdn.nxingcloud.co/images/logo/icon/logo_192x192-1bbba21164f88b5483eb56300e2b168d-9871be.png"},"url":"https://nxingcloud.co/","description":"这里是南星的小站，用来做我的学习记录记录，不定时分享C语言，C++，Python，计算机网络，及日常使用技巧等方面的内容"},"publisher":{"@type":"Organization","name":"南星有话说","url":"https://nxingcloud.co/","logo":{"@type":"ImageObject","url":"https://cdn.nxingcloud.co/images/logo/icon/logo_192x192-1bbba21164f88b5483eb56300e2b168d-9871be.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://nxingcloud.co?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"这里是南星的小站，用来做我的学习记录记录，不定时分享C语言，C++，Python，计算机网络，及日常使用技巧等方面的内容","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"南星&NXing","image":{"@type":"ImageObject","url":"https://cdn.nxingcloud.co/images/logo/icon/logo_192x192-1bbba21164f88b5483eb56300e2b168d-9871be.png"},"url":"https://nxingcloud.co/"},"publisher":{"@type":"Organization","name":"南星有话说","logo":{"@type":"ImageObject","url":"https://cdn.nxingcloud.co/images/logo/icon/logo_192x192-1bbba21164f88b5483eb56300e2b168d-9871be.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://cdn.nxingcloud.co/images/logo/icon/logo_192x192-1bbba21164f88b5483eb56300e2b168d-9871be.png","width":192,"height":192}}]</script>
 
 
 
