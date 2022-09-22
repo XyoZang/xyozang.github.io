@@ -91,6 +91,64 @@ const VolantisApp = (() => {
     document.body.oncopy = function () {
       fn.messageCopyright()
     };
+    // artalk 侧边栏
+    fn.genArtalkContent('#widget-artalk-hotarticle', 'pv_most_pages', 10, 30); // 热门文章
+    fn.genArtalkContent('#widget-artalk-randpages', 'rand_pages', 10, 1); // 随机文章
+    fn.genArtalkContent('#widget-artalk-hotcomment', 'latest_comments', 10, 10); // 最新评论
+  }
+
+  /**
+   * 填充侧边栏
+   * @param {*} selector Dom 选择器
+   * @param {*} type     Api
+   * @param {*} limit   请求数限制
+   * @param {*} time    时间（单位分 min）
+   */
+   fn.genArtalkContent = async (selector, type, limit, time) => {
+    const genArtalkTime = localStorage.getItem(`GenArtalkTime-${type}`) || 0;
+    const element = document.querySelector(selector);
+    if (!!element) {
+      const content = element.querySelector('.tab-pane-content');
+      try {
+        let json;
+        if (genArtalkTime > Date.now()) {
+          json = JSON.parse(localStorage.getItem(type))
+        } else {
+          json = await VolantisRequest.POST('https://artalk.nxingcloud.co/api/stat', {
+            site_name: '南星有话说',
+            type: type,
+            limit: limit
+          })
+          localStorage.setItem(type, JSON.stringify(json))
+          localStorage.setItem(`GenArtalkTime-${type}`, Date.now() + time * 60000)
+        }
+        let html = '';
+        json.forEach((item, index) => {
+          switch (type) {
+            case 'pv_most_pages':
+            case 'rand_pages':
+              const title = item?.title.replaceAll(' - 南星有话说', '');
+              html = `${html}<li><span>${index + 1}</span><a title='${title}' href='${item?.key}'>${title}</a></li>`;
+              break;
+            case 'latest_comments':
+              let avatar = '';
+              if (item?.link === "") {
+                avatar = `<div class="avatar"><img src="https://cravatar.cn/avatar/${item?.email_encrypted}?d=mp&amp;s=80"></div>`
+              } else {
+                avatar = `<div class="avatar"><a target="_blank" rel="noreferrer noopener nofollow" href="${item?.link}"><img src="https://cravatar.cn/avatar/${item?.email_encrypted}?d=mp&amp;s=80"></a></div>`
+              }
+              let content = item?.content_marked.replace(/<img\b.*?(?:\>|\/>)/g, '[图片]');
+              html = `${html}<li>${avatar}<div class="main"><a href="${item?.page_key}#atk-comment-${item?.id}"><p>${item?.nick}</p>${content}</a></div></li>`;
+              break;
+          }
+        })
+        content.innerHTML = `<ul>${html}</ul>`;
+        if (typeof pjax !== 'undefined') pjax.refresh(content)
+      } catch (error) {
+        console.error(error)
+        content.innerHTML = `加载失败 /(ㄒoㄒ)/~~`
+      }
+    }
   }
 
   fn.restData = () => {
@@ -354,7 +412,7 @@ const VolantisApp = (() => {
 
   // 设置 tabs 标签  【移动端 PC】
   fn.setTabs = () => {
-    let tabs = document.querySelectorAll('#l_main .tabs .nav-tabs')
+    let tabs = document.querySelectorAll('#l_main .tabs .nav-tabs, .widget .tabs .nav-tabs')
     if (!tabs) return
     tabs.forEach(function (e) {
       e.querySelectorAll('a').forEach(function (e) {
