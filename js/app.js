@@ -95,6 +95,13 @@ const VolantisApp = (() => {
     fn.genArtalkContent('#widget-artalk-hotarticle', 'pv_most_pages', 10, 30); // 热门文章
     fn.genArtalkContent('#widget-artalk-randpages', 'rand_pages', 10, 1); // 随机文章
     fn.genArtalkContent('#widget-artalk-hotcomment', 'latest_comments', 10, 10); // 最新评论
+    // NextSite 侧边栏绑定事件
+    document.querySelector('.nextsite div.site-nav-toggle')?.addEventListener('click', () => {
+      let menu = document.querySelector('.nextsite nav.site-nav');
+      if (menu) {
+        menu.style.display = menu.style.display === 'none' || menu.style.display === '' ? 'block' : 'none';
+      }
+    })
   }
 
   /**
@@ -327,6 +334,37 @@ const VolantisApp = (() => {
           volantis.dom.$(id).addClass('active')
         }
       });
+    }
+  }
+
+  // 导航栏激活设定
+  fn.nextSiteMenu = () => {
+    const element = document.querySelector('.widget.nextsite');
+    if (element) {
+      let activeItem = element.querySelector('li.menu-item-active');
+      if (activeItem) {
+        activeItem.removeClass('.menu-item-active');
+      }
+      let idname = location.pathname.replace(/\/|%|\./g, '');
+      if (idname.length == 0) {
+        idname = 'home';
+      }
+      var page = idname.match(/page\d{0,}$/g);
+      if (page) {
+        page = page[0];
+        idname = idname.split(page)[0];
+      }
+      var index = idname.match(/index.html/);
+      if (index) {
+        index = index[0];
+        idname = idname.split(index)[0];
+      }
+      // 转义字符如 [, ], ~, #, @
+      idname = idname.replace(/(\[|\]|~|#|@)/g, '\\$1');
+      let nowItem = element.querySelector("[active-action=action-" + idname + "]");
+      if (nowItem?.parentElement) {
+        volantis.dom.$(nowItem.parentElement).addClass('menu-item-active')
+      }
     }
   }
 
@@ -717,6 +755,7 @@ const VolantisApp = (() => {
       fn.setScrollAnchor();
       fn.setTabs();
       fn.footnotes();
+      fn.nextSiteMenu();
     },
     pjaxReload: () => {
       fn.event();
@@ -727,6 +766,7 @@ const VolantisApp = (() => {
       fn.setScrollAnchor();
       fn.setTabs();
       fn.footnotes();
+      fn.nextSiteMenu();
 
       // 移除小尾巴的移除
       document.querySelector("#l_header .nav-main").querySelectorAll('.list-v:not(.menu-phone)').forEach(function (e) {

@@ -1354,12 +1354,22 @@ svg.loading {
 }
 #l_main {
   width: calc(100% - 1 * 240px);
-  padding-right: 16px;
+  padding-left: 16px;
   float: left;
+  -webkit-box-ordinal-group: 2;
+  -moz-box-ordinal-group: 2;
+  -ms-flex-order: 2;
+  -webkit-order: 2;
+  order: 2;
 }
 @media screen and (max-width: 768px) {
   #l_main {
     width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  #l_main {
+    padding-left: 0;
   }
 }
 #l_main.no_sidebar {
@@ -2530,6 +2540,11 @@ img.lazyload:not(.placeholder).loaded {
 #l_side {
   width: 240px;
   float: right;
+  -webkit-box-ordinal-group: 1;
+  -moz-box-ordinal-group: 1;
+  -ms-flex-order: 1;
+  -webkit-order: 1;
+  order: 1;
   position: relative;
   display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
   display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
@@ -8164,6 +8179,9 @@ article p {
 .tab-pane-content a:hover {
   color: #ff5722;
 }
+.widget.blogger .content .social-wrapper {
+  margin: 4px 40px;
+}
 .widget div.tabs {
   margin: 0;
   border: none;
@@ -8273,4 +8291,229 @@ article p {
 }
 .tab-artalk-comment .main p:first-child {
   font-weight: bold;
+}
+.nextsite {
+  font-size: 0.875rem;
+}
+.nextsite .site-brand-wrapper {
+  background-color: rgba(0,0,0,0.8);
+  box-shadow: 0 2px 15px 0 #000;
+  -webkit-box-shadow: 0 2px 15px 0 #000;
+  transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  -khtml-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  position: relative;
+}
+@media screen and (min-width: 500px) {
+  .nextsite .site-brand-wrapper:hover {
+    background: rgba(0,0,0,0.9);
+    border-radius: 0 0 70px 70px;
+    -webkit-border-radius: 0 0 70px 70px;
+    box-shadow: 0 8px 20px -3px #000;
+    -webkit-box-shadow: 0 8px 20px -3px #000;
+  }
+}
+.nextsite .site-brand-wrapper .site-meta {
+  text-align: center;
+  font-size: 1em;
+  line-height: 2;
+  min-height: 100%;
+  transition: padding 0.2s ease-in-out;
+  -webkit-transition: padding 0.2s ease-in-out;
+  -khtml-transition: padding 0.2s ease-in-out;
+  -moz-transition: padding 0.2s ease-in-out;
+  -o-transition: padding 0.2s ease-in-out;
+  -ms-transition: padding 0.2s ease-in-out;
+  padding: 20px 0;
+}
+.nextsite .site-brand-wrapper .site-meta .brand {
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: inline-block;
+}
+.nextsite .site-brand-wrapper .site-meta .site-title {
+  line-height: 1.5;
+  color: #f9a972;
+  font-size: 1.8em;
+  text-shadow: 0 1px 4px #fff;
+  margin: 0.67em 0;
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: inline-block;
+}
+.nextsite .site-brand-wrapper .site-meta .site-subtitle {
+  font-size: 0.85rem;
+  color: var(--color-meta);
+}
+.nextsite .site-brand-wrapper .site-nav-toggle {
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -khtml-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: none;
+  position: absolute;
+}
+@media screen and (max-width: 500px) {
+  .nextsite .site-brand-wrapper .site-nav-toggle {
+    display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+    display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+    display: block;
+  }
+}
+.nextsite .site-brand-wrapper .site-nav-toggle button {
+  margin-top: 2px;
+  padding: 9px 10px;
+  background: transparent;
+  border: none;
+}
+.nextsite .site-brand-wrapper .site-nav-toggle button .btn-bar {
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: #555;
+  border-radius: 1px;
+  -webkit-border-radius: 1px;
+  background-color: #fff;
+}
+.nextsite .site-brand-wrapper .site-nav-toggle button .btn-bar+.btn-bar {
+  margin-top: 4px;
+}
+.nextsite .site-nav {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  padding-left: 5px;
+}
+@media screen and (max-width: 500px) {
+  .nextsite .site-nav {
+    display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+    display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+    display: none;
+    animation: header-effect 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    -webkit-animation: header-effect 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    -khtml-animation: header-effect 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    -moz-animation: header-effect 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    -o-animation: header-effect 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    -ms-animation: header-effect 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  }
+}
+@media screen and (min-width: 500px) {
+  .nextsite .site-nav {
+    display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+    display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+    display: block !important;
+  }
+}
+.nextsite .site-nav .next-main .menu-item-active a {
+  border-radius: 50px 0 0 50px;
+  -webkit-border-radius: 50px 0 0 50px;
+  border-color: transparent;
+  box-shadow: 0 4px 20px -4px rgba(0,0,0,0.251);
+  -webkit-box-shadow: 0 4px 20px -4px rgba(0,0,0,0.251);
+}
+.nextsite .site-nav .next-main .menu-item-active a:after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  margin-top: -3px;
+  right: 15px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  background-color: #f9a972;
+}
+.nextsite .site-nav .next-main .next-main-item:hover a {
+  border-radius: 50px 0 0 50px;
+  -webkit-border-radius: 50px 0 0 50px;
+  border-color: transparent;
+  box-shadow: 0 4px 20px -4px rgba(0,0,0,0.251);
+  -webkit-box-shadow: 0 4px 20px -4px rgba(0,0,0,0.251);
+  color: #f9a972;
+}
+.nextsite .site-nav .next-main .next-main-item a {
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: block;
+  color: var(--color-list);
+  padding: 5px 10px;
+  position: relative;
+}
+.nextsite .site-nav .next-main .next-main-item .menu-item-icon {
+  margin-right: 8px;
+}
+.nextblogger {
+  padding: 20px 10px 10px;
+}
+.nextblogger .site-author-image {
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: block;
+  margin: 0 auto;
+  padding: 2px;
+  max-width: 120px;
+  height: auto;
+  border: 1px solid #eee;
+  opacity: 1;
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+}
+.nextblogger .site-author-box {
+  margin-top: 15px;
+  text-align: center;
+}
+.nextblogger .site-author-box .site-author-name {
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--color-text);
+  margin: 0;
+}
+.nextblogger .site-author-box .site-author-description {
+  color: var(--color-list);
+  margin-top: 2px;
+  text-align: center;
+  font-size: 13px;
+}
+.nextblogger .links-of-author {
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: -ms-flexbox /* TWEENER - IE 10 */;
+  display: -webkit-flex /* NEW - Chrome */;
+  display: flex /* NEW, Spec - Opera 12.1, Firefox 20+ */;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -khtml-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  justify-content: center;
+  -webkit-justify-content: center;
+  -khtml-justify-content: center;
+  -moz-justify-content: center;
+  -o-justify-content: center;
+  -ms-justify-content: center;
+}
+.nextblogger .links-of-author a {
+  color: var(--color-list);
+}
+.nextblogger .links-of-author a:hover {
+  color: #f9a972;
+}
+.nextblogger .links-of-author-item {
+  margin: 0 4px;
+  font-size: 1.05rem;
+  color: var(--text-color);
 }
