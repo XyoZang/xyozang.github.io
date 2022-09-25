@@ -1907,7 +1907,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: false,
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1664071643225),
+    lastupdate: new Date(1664121227910),
     sidebar: {
       for_page: ["blogger","artalk","lastupdate"],
       for_post: ["toc"],
@@ -2974,19 +2974,28 @@ send_email($to=$mailReceiver, $subject=$mailSubject, $content=$mailContent);
       <!-- 版权声明组件 -->
       
         
-          <div class='copyright'>
-            <blockquote>
+          
+          <div class="copyright license">
+            <div class="license-title">PHPMailer使用封装教程：为自己的PHP项目配置邮件功能</div>
+            <div class="license-link"><a href="https://nxingcloud.co/posts/1df67ba2/">https://nxingcloud.co/posts/1df67ba2/</a>
+            </div>
+            <div class="license-meta">
+              <div class="license-meta-item">
+                <div class="license-meta-title">本文作者</div>
+                <div class="license-meta-text">南星&NXing</div>
+              </div>
+              <div class="license-meta-item">
+                <div class="license-meta-title">发布于</div>
+                <div class="license-meta-text">2022年9月18日</div>
+              </div>
               
-                
-                  <p>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
-
-                
               
-                
-                  <p>本文永久链接是：<a href="https://nxingcloud.co/posts/1df67ba2/">https://nxingcloud.co/posts/1df67ba2/</a></p>
-                
-              
-            </blockquote>
+              <div class="license-meta-item">
+                <div class="license-meta-title">许可协议</div>
+                <div class="license-meta-text">允许规范转载</div>
+              </div>
+            </div>
+            <div class="license-statement">转载请保留本文转载地址，著作权归作者所有！</div>
           </div>
         
       
@@ -3898,8 +3907,8 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
   volantis.layoutHelper("comments",`<div id="artalk_container"><i class="fa-solid fa-cog fa-spin fa-fw fa-2x"></i></div>`);
   function load_artalk() {
     if(!document.querySelectorAll("#artalk_container")[0])return;
-    volantis.css("https://cdn.nxingcloud.co/assets/style/artalk/Artalk-2a1f8b36.css");
-    volantis.js("https://cdn.nxingcloud.co/assets/style/artalk/Artalk-b5b3a442.js").then(pjax_artalk);
+    volantis.css("https://cdn.nxingcloud.co/Artalk-1bffefce.css");
+    volantis.js("https://cdn.nxingcloud.co/Artalk-c4859270.js").then(pjax_artalk);
   }
 
   function pjax_artalk() {
@@ -3913,7 +3922,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
       path = path.replaceAll('/index.html', '/').replaceAll('.html', '')
     }
 
-    volantis.artalk = new Artalk(Object.assign({"js":"https://cdn.nxingcloud.co/assets/style/artalk/Artalk-b5b3a442.js","css":"https://cdn.nxingcloud.co/assets/style/artalk/Artalk-2a1f8b36.css","server":"https://artalk.nxingcloud.co","path":null,"placeholder":null,"imageUploader":{"api":null,"token":null,"resp":null},"emoticons":["https://cdn.nxingcloud.co/assets/emoji/bilibili2233/bilibili2233-695ddd75ffd2f17e401c4b1642c67492-71d0f6.json","https://cdn.nxingcloud.co/assets/emoji/Tieba/Tieba-a74dcc7cda7f5b2a876e01ceaa82af09-cc8d29.json"]}, {
+    volantis.artalk = new Artalk(Object.assign({"js":"https://cdn.nxingcloud.co/Artalk-c4859270.js","css":"https://cdn.nxingcloud.co/Artalk-1bffefce.css","server":"https://artalk.nxingcloud.co","path":null,"placeholder":null,"imageUploader":{"api":null,"token":null,"resp":null},"emoticons":["https://cdn.nxingcloud.co/images/emoji/bilibili2233/bilibili2233.json","https://cdn.nxingcloud.co/images/emoji/Tieba/Tieba.json"]}, {
       el: '#artalk_container',
       pageKey: path,
       pageTitle: document.title,

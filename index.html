@@ -1905,7 +1905,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: false,
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1664071643225),
+    lastupdate: new Date(1664121227910),
     sidebar: {
       for_page: ["blogger","artalk","lastupdate"],
       for_post: ["toc"],
@@ -3644,8 +3644,8 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
   volantis.layoutHelper("comments",`<div id="artalk_container"><i class="fa-solid fa-cog fa-spin fa-fw fa-2x"></i></div>`);
   function load_artalk() {
     if(!document.querySelectorAll("#artalk_container")[0])return;
-    volantis.css("https://cdn.nxingcloud.co/assets/style/artalk/Artalk-2a1f8b36.css");
-    volantis.js("https://cdn.nxingcloud.co/assets/style/artalk/Artalk-b5b3a442.js").then(pjax_artalk);
+    volantis.css("https://cdn.nxingcloud.co/Artalk-1bffefce.css");
+    volantis.js("https://cdn.nxingcloud.co/Artalk-c4859270.js").then(pjax_artalk);
   }
 
   function pjax_artalk() {
@@ -3659,7 +3659,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
       path = path.replaceAll('/index.html', '/').replaceAll('.html', '')
     }
 
-    volantis.artalk = new Artalk(Object.assign({"js":"https://cdn.nxingcloud.co/assets/style/artalk/Artalk-b5b3a442.js","css":"https://cdn.nxingcloud.co/assets/style/artalk/Artalk-2a1f8b36.css","server":"https://artalk.nxingcloud.co","path":null,"placeholder":null,"imageUploader":{"api":null,"token":null,"resp":null},"emoticons":["https://cdn.nxingcloud.co/assets/emoji/bilibili2233/bilibili2233-695ddd75ffd2f17e401c4b1642c67492-71d0f6.json","https://cdn.nxingcloud.co/assets/emoji/Tieba/Tieba-a74dcc7cda7f5b2a876e01ceaa82af09-cc8d29.json"]}, {
+    volantis.artalk = new Artalk(Object.assign({"js":"https://cdn.nxingcloud.co/Artalk-c4859270.js","css":"https://cdn.nxingcloud.co/Artalk-1bffefce.css","server":"https://artalk.nxingcloud.co","path":null,"placeholder":null,"imageUploader":{"api":null,"token":null,"resp":null},"emoticons":["https://cdn.nxingcloud.co/images/emoji/bilibili2233/bilibili2233.json","https://cdn.nxingcloud.co/images/emoji/Tieba/Tieba.json"]}, {
       el: '#artalk_container',
       pageKey: path,
       pageTitle: document.title,
