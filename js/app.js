@@ -121,8 +121,8 @@ const VolantisApp = (() => {
         if (genArtalkTime > Date.now()) {
           json = JSON.parse(localStorage.getItem(type))
         } else {
-          json = await VolantisRequest.POST('https://artalk.nxingcloud.co/api/stat', {
-            site_name: '南星有话说',
+          json = await VolantisRequest.POST('https://artalk.xenns.com/api/stat', {
+            site_name: '淼言学习记 - Xenns',
             type: type,
             limit: limit
           })
@@ -134,7 +134,7 @@ const VolantisApp = (() => {
           switch (type) {
             case 'pv_most_pages':
             case 'rand_pages':
-              const title = item?.title.replaceAll(' - 南星有话说', '');
+              const title = item?.title.replaceAll(' - 淼言学习记 - Xenns', '');
               html = `${html}<li><span>${index + 1}</span><a title='${title}' href='${item?.key}'>${title}</a></li>`;
               break;
             case 'latest_comments':
