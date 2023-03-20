@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-    <head hexo-theme='https://github.com/volantis-x/hexo-theme-volantis/#5.7.4'>
+    <head hexo-theme='https://github.com/volantis-x/hexo-theme-volantis/#5.7.7'>
   <meta name="generator" content="Hexo 5.4.2">
-  <meta name="Volantis" content="5.7.4">
+  <meta name="Volantis" content="5.7.7">
   <meta charset="utf-8">
   <!-- SEO相关 -->
   <meta name="robots" content="noindex,follow">
@@ -40,11 +40,11 @@
 <meta property="og:site_name" content="淼言学习记 - Xenns">
 <meta property="og:description" content="这里是南星的小站，用来做我的学习记录记录，不定时分享C语言，C++，Python，计算机网络，及日常使用技巧等方面的内容">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://cdn.nxingcloud.co/images/logo/icon/logo_192x192-1bbba21164f88b5483eb56300e2b168d-9871be.png">
+<meta property="og:image" content="https://cdn.nxingcloud.co/images/logo/icon/logo-5-209a13.png">
 <meta property="article:author" content="南星&amp;NXing">
 <meta property="article:tag" content="NXing,NXingcloud,南星,博客,Blog,C++,C语言,Python,网络技术,volantis">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://cdn.nxingcloud.co/images/logo/icon/logo_192x192-1bbba21164f88b5483eb56300e2b168d-9871be.png">
+<meta name="twitter:image" content="https://cdn.nxingcloud.co/images/logo/icon/logo-5-209a13.png">
   <style>
     /* 首屏样式 */
     #safearea {
@@ -226,7 +226,7 @@ button {
   -webkit-box-shadow: 0 2px 4px 0px rgba(0,0,0,0.1), 0 4px 8px 0px rgba(0,0,0,0.1), 0 8px 16px 0px rgba(0,0,0,0.1);
 }
 #l_cover {
-  min-height: 60px;
+  min-height: 0px;
 }
 .cover-wrapper {
   top: 0;
@@ -375,7 +375,7 @@ button {
 .cover-wrapper#half {
   max-height: 640px;
   min-height: 400px;
-  height: calc(36vh - 60px + 200px);
+  height: calc(36vh - 0px + 200px);
 }
 .cover-wrapper #scroll-down {
   width: 100%;
@@ -481,7 +481,7 @@ button {
   }
 }
 .cover-wrapper .cover-body {
-  margin-top: 60px;
+  margin-top: 0px;
   margin-bottom: 100px;
 }
 .cover-wrapper .cover-body,
@@ -711,122 +711,6 @@ button {
   -moz-opacity: 1;
   border-bottom: 2px solid var(--color-site-inner);
 }
-.cover-wrapper.dock .menu,
-.cover-wrapper.featured .menu,
-.cover-wrapper.focus .menu {
-  border-radius: 6px;
-  -webkit-border-radius: 6px;
-}
-.cover-wrapper.dock .menu .list-h a,
-.cover-wrapper.featured .menu .list-h a,
-.cover-wrapper.focus .menu .list-h a {
-  -webkit-box-direction: normal;
-  -moz-box-direction: normal;
-  -webkit-box-orient: vertical;
-  -moz-box-orient: vertical;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  align-items: center;
-  padding: 12px;
-  line-height: 24px;
-  border-radius: 4px;
-  -webkit-border-radius: 4px;
-  border-bottom: none;
-  text-align: center;
-  align-content: flex-end;
-  color: rgba(68,68,68,0.7);
-  font-size: 1.5rem;
-}
-@media screen and (max-width: 500px) {
-  .cover-wrapper.dock .menu .list-h a,
-  .cover-wrapper.featured .menu .list-h a,
-  .cover-wrapper.focus .menu .list-h a {
-    padding: 12px 8px;
-  }
-}
-.cover-wrapper.dock .menu .list-h a i,
-.cover-wrapper.featured .menu .list-h a i,
-.cover-wrapper.focus .menu .list-h a i {
-  margin: 8px;
-}
-.cover-wrapper.dock .menu .list-h a p,
-.cover-wrapper.featured .menu .list-h a p,
-.cover-wrapper.focus .menu .list-h a p {
-  font-size: 0.875rem;
-}
-.cover-wrapper.dock .menu .list-h a.active,
-.cover-wrapper.featured .menu .list-h a.active,
-.cover-wrapper.focus .menu .list-h a.active {
-  background: var(--color-card);
-  backdrop-filter: none;
-}
-.cover-wrapper.dock .menu .list-h a.active i,
-.cover-wrapper.featured .menu .list-h a.active i,
-.cover-wrapper.focus .menu .list-h a.active i,
-.cover-wrapper.dock .menu .list-h a.active i+p,
-.cover-wrapper.featured .menu .list-h a.active i+p,
-.cover-wrapper.focus .menu .list-h a.active i+p {
-  color: #60f;
-}
-.cover-wrapper.dock .menu .list-h a.active img+p,
-.cover-wrapper.featured .menu .list-h a.active img+p,
-.cover-wrapper.focus .menu .list-h a.active img+p {
-  color: var(--color-text);
-}
-.cover-wrapper.dock .menu .list-h a:hover,
-.cover-wrapper.featured .menu .list-h a:hover,
-.cover-wrapper.focus .menu .list-h a:hover {
-  background: var(--color-card);
-}
-.cover-wrapper.dock .top {
-  margin-bottom: 48px;
-}
-.cover-wrapper.dock .menu {
-  background: rgba(255,255,255,0.5);
-  position: absolute;
-  bottom: 0;
-  max-width: 100%;
-}
-.cover-wrapper.dock .menu .list-h {
-  flex-wrap: nowrap;
-  -webkit-flex-wrap: nowrap;
-  -khtml-flex-wrap: nowrap;
-  -moz-flex-wrap: nowrap;
-  -o-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  margin: 4px;
-}
-.cover-wrapper.dock .menu .list-h a+a {
-  margin-left: 4px;
-}
-@media screen and (max-width: 500px) {
-  .cover-wrapper.dock .menu .list-h {
-    overflow-x: scroll;
-  }
-  .cover-wrapper.dock .menu .list-h::-webkit-scrollbar {
-    height: 0;
-    width: 0;
-  }
-  .cover-wrapper.dock .menu .list-h::-webkit-scrollbar-track-piece {
-    background: transparent;
-  }
-  .cover-wrapper.dock .menu .list-h::-webkit-scrollbar-thumb {
-    background: #60f;
-    cursor: pointer;
-    border-radius: 0;
-    -webkit-border-radius: 0;
-  }
-  .cover-wrapper.dock .menu .list-h::-webkit-scrollbar-thumb:hover {
-    background: #ff5722;
-  }
-}
-@supports (backdrop-filter: blur(20px)) {
-  .cover-wrapper.dock .menu {
-    background: rgba(255,255,255,0.5);
-    backdrop-filter: saturate(200%) blur(20px);
-  }
-}
 @media (prefers-color-scheme: dark) {
   :root {
     --color-mode: 'dark';
@@ -998,7 +882,7 @@ button {
   z-index: 1000;
   top: 0;
   width: 100%;
-  height: 60px;
+  height: 0px;
   background: var(--color-card);
   box-shadow: 0 1px 2px 0px rgba(0,0,0,0.1);
   -webkit-box-shadow: 0 1px 2px 0px rgba(0,0,0,0.1);
@@ -1060,12 +944,12 @@ button {
   -ms-transition: all 0.28s ease;
 }
 .l_header #wrapper.sub .nav-main {
-  transform: translateY(-60px);
-  -webkit-transform: translateY(-60px);
-  -khtml-transform: translateY(-60px);
-  -moz-transform: translateY(-60px);
-  -o-transform: translateY(-60px);
-  -ms-transform: translateY(-60px);
+  transform: translateY(0px);
+  -webkit-transform: translateY(0px);
+  -khtml-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -o-transform: translateY(0px);
+  -ms-transform: translateY(0px);
 }
 .l_header #wrapper .nav-sub {
   transition: all 0.28s ease;
@@ -1077,7 +961,7 @@ button {
   opacity: 0;
   -webkit-opacity: 0;
   -moz-opacity: 0;
-  height: 60px;
+  height: 0px;
   width: calc(100% - 2 * 16px);
   position: absolute;
 }
@@ -1101,20 +985,20 @@ button {
   position: relative;
   color: var(--color-text);
   padding-left: 24px;
-  max-height: 60px;
+  max-height: 0px;
 }
 .l_header #wrapper .nav-main .title {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   flex-shrink: 0;
-  line-height: 60px;
+  line-height: 0px;
   padding: 0 24px;
   font-size: 1.25rem;
   font-family: Roboto, Noto Serif SC, -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif, Helvetica, monospace;
 }
 .l_header #wrapper .nav-main .title img {
-  height: 60px;
+  height: 0px;
 }
 .l_header .nav-sub {
   max-width: 1080px;
@@ -1124,7 +1008,7 @@ button {
   font-weight: bold;
   font-family: "Noto Serif SC", Roboto, -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif, Menlo, Monaco, monospace, sans-serif;
   line-height: 1.2;
-  max-height: 60px;
+  max-height: 0px;
   white-space: normal;
   flex-shrink: 1;
 }
@@ -1132,7 +1016,7 @@ button {
   display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
   display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
   display: none;
-  line-height: 60px;
+  line-height: 0px;
   align-items: center;
 }
 .l_header .switcher .s-toc {
@@ -1151,7 +1035,7 @@ button {
   }
 }
 .l_header .switcher >li {
-  height: 44px;
+  height: -16px;
   transition: all 0.28s ease;
   -webkit-transition: all 0.28s ease;
   -khtml-transition: all 0.28s ease;
@@ -1163,7 +1047,7 @@ button {
 @media screen and (max-width: 500px) {
   .l_header .switcher >li {
     margin: 0 1px;
-    height: 44px;
+    height: -16px;
   }
 }
 .l_header .switcher >li >a {
@@ -1180,8 +1064,8 @@ button {
   -o-justify-content: center;
   -ms-justify-content: center;
   align-items: center;
-  width: 44px;
-  height: 44px;
+  width: -16px;
+  height: -16px;
   padding: 0.85em 1.1em;
   border-radius: 100px;
   -webkit-border-radius: 100px;
@@ -1205,7 +1089,7 @@ button {
 @media screen and (max-width: 500px) {
   .l_header .switcher >li >a {
     width: 36px;
-    height: 44px;
+    height: -16px;
   }
 }
 .l_header .nav-sub .switcher {
@@ -1223,7 +1107,7 @@ button {
   display: -webkit-flex /* NEW - Chrome */;
   display: flex /* NEW, Spec - Opera 12.1, Firefox 20+ */;
   display: flex;
-  height: 60px;
+  height: 0px;
   width: 240px;
   transition: all 0.28s ease;
   -webkit-transition: all 0.28s ease;
@@ -1354,8 +1238,8 @@ button {
     -ms-transition: all 0.28s ease;
   }
   .l_header .m_search .input {
-    border-radius: 30px;
-    -webkit-border-radius: 30px;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
     margin-left: 16px;
     padding-left: 16px;
   }
@@ -1502,10 +1386,10 @@ ul.list-v >li>a:hover {
 }
 .l_header ul.nav-list-h>li {
   color: var(--color-list);
-  line-height: 60px;
+  line-height: 0px;
 }
 .l_header ul.nav-list-h>li >a {
-  max-height: 60px;
+  max-height: 0px;
   overflow: hidden;
   color: inherit;
 }
@@ -1896,17 +1780,17 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <script>
   /************这个文件存放不需要重载的全局变量和全局函数*********/
   window.volantis = {}; // volantis 全局变量
-  volantis.debug = false; // 开启调试模式
+  volantis.debug = "env"; // 调试模式
   volantis.dom = {}; // 页面Dom see: /source/js/app.js etc.
 
   volantis.GLOBAL_CONFIG ={
-    debug: false,
+    debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1679284409070),
+    lastupdate: new Date(1679320911116),
     sidebar: {
-      for_page: ["blogger","artalk","lastupdate"],
-      for_post: ["blogger","toc"],
+      for_page: ["nextsite","blogger","artalk","lastupdate"],
+      for_post: ["nextsite","blogger","toc"],
       webinfo: {
         lastupd: {
           enable: true,
@@ -2246,8 +2130,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     volantis.requestAnimationFrame(loop)
   }
   volantis.scroll.handleScrollEvents()
+  volantis.scroll.ele = null;
   // 触发页面滚动至目标元素位置
-  volantis.scroll.to = (ele, option = {}) =>{
+  volantis.scroll.to = (ele, option = {}) => {
+    if (!ele) return;
+    volantis.scroll.ele = ele;
     // 默认配置
     opt = {
       top: ele.getBoundingClientRect().top + document.documentElement.scrollTop,
@@ -2273,8 +2160,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     // 用于处理 lazyload 引起的 cls 导致的定位失败问题
     // option.observer = false
     if (option.observer) {
-      setTimeout(()=>{
-        volantis.scroll.unengine.push(()=>{
+      setTimeout(() => {
+        if (volantis.scroll.ele != ele) {
+          return
+        }
+        volantis.scroll.unengine.push(() => {
           let me = ele.getBoundingClientRect().top
           if(!(me >= -option.observerDic && me <= option.observerDic)){
             volantis.scroll.to(ele, option)
@@ -2329,245 +2219,32 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     <!-- Custom Files bodyBegin end-->
     
-    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow floatable blur show" style='opacity: 0' >
-  <div class='container'>
-  <div id='wrapper'>
-    <div class='nav-sub'>
-      <p class="title"></p>
-      <ul class='switcher nav-list-h m-phone' id="pjax-header-nav-list">
-        <li><a id="s-comment" class="fa-solid fa-comments fa-fw" target="_self"  href="/" onclick="return false;" title="comment"></a></li>
-        
-          <li><a id="s-toc" class="s-toc fa-solid fa-list fa-fw" target="_self"  href="/" onclick="return false;" title="toc"></a></li>
-        
-      </ul>
-    </div>
-		<div class="nav-main">
-      
-        
-        <a class="title flat-box" target="_self" href='/'>
-          
-            <img no-lazy class='logo' src='https://cdn.nxingcloud.co/images/logo/icon/logo-5-209a13.png'/>
-          
-          
-          
-        </a>
-      
-
-			<div class='menu navigation'>
-				<ul class='nav-list-h m-pc'>
-          
-          
-          
-            
-            
-              <li>
-                <a class="menuitem flat-box faa-parent animated-hover"
-                href="/" title="首页"
-                  
-                  
-                  
-                    active-action="action-home"
-                  >
-                  <i class='iconfont icon-shouye fa-fw'></i>首页
-                </a>
-                
-              </li>
-            
-          
-          
-            
-            
-              <li>
-                <a class="menuitem flat-box faa-parent animated-hover"
-                href="/categories/" title="分类"
-                  
-                  
-                  
-                    active-action="action-categories"
-                  >
-                  <i class='iconfont icon-fenlei- fa-fw'></i>分类
-                </a>
-                
-              </li>
-            
-          
-          
-            
-            
-              <li>
-                <a class="menuitem flat-box faa-parent animated-hover"
-                href="/archives/" title="归档"
-                  
-                  
-                  
-                    active-action="action-archives"
-                  >
-                  <i class='iconfont icon-guidang fa-fw'></i>归档
-                </a>
-                
-              </li>
-            
-          
-          
-            
-            
-              <li>
-                <a class="menuitem flat-box faa-parent animated-hover"
-                href="/friends/" title="友链"
-                  
-                  
-                  
-                    active-action="action-friends"
-                  >
-                  <i class='iconfont icon-lianjie fa-fw'></i>友链
-                </a>
-                
-              </li>
-            
-          
-          
-            
-            
-              <li>
-                <a class="menuitem flat-box header toggle-mode-btn">
-                  <i class='fa-solid fa-moon fa-fw'></i>暗黑模式
-                </a>
-              <li>
-            
-          
-          
-				</ul>
-			</div>
-      
-      <div class="m_search">
-        <form name="searchform" class="form u-search-form">
-          <i class="icon fa-solid fa-search fa-fw"></i>
-          <input type="text" class="input u-search-input" placeholder="Search..." />
-        </form>
-      </div>
-      
-
-			<ul class='switcher nav-list-h m-phone'>
-				
-					<li><a class="s-search fa-solid fa-search fa-fw" target="_self" href="/" onclick="return false;" title="search"></a></li>
-				
-				<li>
-          <a class="s-menu fa-solid fa-bars fa-fw" target="_self" href="/" onclick="return false;" title="menu"></a>
-          <ul class="menu-phone list-v navigation white-box">
-            
-              
-            
-              <li>
-                <a class="menuitem flat-box faa-parent animated-hover"
-                href="/" title="首页"
-                  
-                  
-                  
-                    active-action="action-home"
-                  >
-                  <i class='iconfont icon-shouye fa-fw'></i>首页
-                </a>
-                
-              </li>
-            
-          
-            
-              
-            
-              <li>
-                <a class="menuitem flat-box faa-parent animated-hover"
-                href="/categories/" title="分类"
-                  
-                  
-                  
-                    active-action="action-categories"
-                  >
-                  <i class='iconfont icon-fenlei- fa-fw'></i>分类
-                </a>
-                
-              </li>
-            
-          
-            
-              
-            
-              <li>
-                <a class="menuitem flat-box faa-parent animated-hover"
-                href="/archives/" title="归档"
-                  
-                  
-                  
-                    active-action="action-archives"
-                  >
-                  <i class='iconfont icon-guidang fa-fw'></i>归档
-                </a>
-                
-              </li>
-            
-          
-            
-              
-            
-              <li>
-                <a class="menuitem flat-box faa-parent animated-hover"
-                href="/friends/" title="友链"
-                  
-                  
-                  
-                    active-action="action-friends"
-                  >
-                  <i class='iconfont icon-lianjie fa-fw'></i>友链
-                </a>
-                
-              </li>
-            
-          
-            
-              
-            
-              <li>
-                <a class="menuitem flat-box header toggle-mode-btn">
-                  <i class='fa-solid fa-moon fa-fw'></i>暗黑模式
-                </a>
-              <li>
-            
-          
-            
-          </ul>
-        </li>
-			</ul>
-
-      <!-- Custom Files header begin -->
-      
-      <!-- Custom Files header end -->
-		</div>
-	</div>
-  </div>
-</header>
-
-    
     <div id="l_body">
       <div id="l_cover">
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="none" class='cover-wrapper  dock' style="display: none;">
+      <div id="half" class='cover-wrapper  search' style="display: ;">
         
   <div class='cover-bg lazyload placeholder' data-bg="https://bing.xenns.com/api/index.php?random=true/"></div>
 
 <div class='cover-body'>
   <div class='top'>
     
-      <img no-lazy class='logo' src='https://cdn.nxingcloud.co/images/logo/gravatar/larggedge-bb871f.png'/>
     
+      <p class="title">一日不书，百事荒芜。</p>
     
-      <p class="title">Xenns</p>
-    
-    
-      <p class="subtitle">Code Creats Life.</p>
     
   </div>
   <div class='bottom'>
+    
+      <div class="m_search">
+        <form name="searchform" class="form u-search-form">
+          <input type="text" class="input u-search-input" placeholder="Better world, better life!" />
+          <i class="icon fa-solid fa-search fa-fw"></i>
+        </form>
+      </div>
+    
     <div class='menu navigation'>
       <div class='list-h'>
         
@@ -2576,28 +2253,28 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
               
               
               active-action="action-https:xennscom">
-              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f4f0.svg'><p>博客</p>
-            </a>
-          
-            <a target="_blank" rel="noopener" href="https://one.xenns.com/"
-              
-              
-              active-action="action-https:onexennscom">
-              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f5c3.svg'><p>文件</p>
+              <p>首页</p>
             </a>
           
             <a target="_blank" rel="noopener" href="https://pan.xenns.com/"
               
               
               active-action="action-https:panxennscom">
-              <img src='https://unpkg.com/volantis-static@0.0.1660614606622/media/twemoji/assets/svg/1f9ec.svg'><p>云盘</p>
+              <p>共享</p>
+            </a>
+          
+            <a target="_blank" rel="noopener" href="https://web.xenns.com/"
+              
+              
+              active-action="action-https:webxennscom">
+              <p>云盘</p>
             </a>
           
             <a target="_blank" rel="noopener" href="https://bing.xenns.com/"
               
               
               active-action="action-https:bingxennscom">
-              <img src='https://cdn.nxingcloud.co/images/logo/icon/icons8-bing-32-e3c7cf370294576ae48fbb4625e8002c-76fa00.ico'><p>壁纸</p>
+              <p>壁纸</p>
             </a>
           
         
@@ -2704,6 +2381,122 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
 </div>
 <aside id='l_side' itemscope itemtype="http://schema.org/WPSideBar">
+  
+
+  
+    
+    
+      
+<section class="widget nextsite desktop mobile pjax">
+  <div class="site-brand-wrapper">
+    <div class="site-meta ">
+      <a href="/about/" class="brand" rel="start">
+        <span class="site-title">淼言学习记 - Xenns</span>
+      </a>
+      <p class="site-subtitle" itemprop="description">一百年太久，只争朝夕。</p>
+    </div>
+    <div class="site-nav-toggle">
+      <button aria-label="切换导航栏">
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+      </button>
+    </div>
+  </div>
+  <nav class="site-nav">
+    <ul class="next-main">
+      
+        <li class="next-main-item">
+          <a 
+          href="/" title="- 首页 °| Home"
+          
+            active-action="action-home"
+          
+          
+          
+          
+          >
+          
+            <i class="menu-item-icon iconfont icon-shouye fa-fw"></i>
+          
+          - 首页 °| Home
+        </a>
+        </li>
+      
+        <li class="next-main-item">
+          <a 
+          href="/categories/" title="- 分类 °| Categories"
+          
+            active-action="action-categories"
+          
+          
+          
+          
+          >
+          
+            <i class="menu-item-icon iconfont icon-fenlei- fa-fw"></i>
+          
+          - 分类 °| Categories
+        </a>
+        </li>
+      
+        <li class="next-main-item">
+          <a 
+          href="/archives/" title="- 归档 °| Archives"
+          
+            active-action="action-archives"
+          
+          
+          
+          
+          >
+          
+            <i class="menu-item-icon iconfont icon-guidang fa-fw"></i>
+          
+          - 归档 °| Archives
+        </a>
+        </li>
+      
+        <li class="next-main-item">
+          <a 
+          href="/friends/" title="- 友链 °| Friends"
+          
+            active-action="action-friends"
+          
+          
+          
+          
+          >
+          
+            <i class="menu-item-icon iconfont icon-lianjie fa-fw"></i>
+          
+          - 友链 °| Friends
+        </a>
+        </li>
+      
+        <li class="next-main-item">
+          <a 
+          href="javascript:void(0)" title="- 搜索 °| Search"
+          
+            active-action="action-javascript:void(0)"
+          
+          
+          
+          
+            onClick="OpenSearch()"
+          
+          >
+          
+            <i class="menu-item-icon iconfont icon-sousuo fa-fw"></i>
+          
+          - 搜索 °| Search
+        </a>
+        </li>
+      
+    </ul>
+  </nav>
+</section>
+    
   
 
   
@@ -2882,10 +2675,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <!-- pjax占位 -->
   </div>
 
-  <div class="pjax">
-    <!-- pjax占位 -->
-  </div>
-
   <!-- Custom Files side begin -->
   
   <!-- Custom Files side end -->
@@ -2907,14 +2696,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     // header
     var l_header=document.getElementById("l_header");
     
-    l_header.classList.add("show");
+    l_header.classList.remove("show");
     
     
       // cover
       var cover_wrapper=document.querySelector('#l_cover .cover-wrapper');
       var scroll_down=document.getElementById('scroll-down');
-      cover_wrapper.id="none";
-      cover_wrapper.style.display="none";
+      cover_wrapper.id="half";
+      cover_wrapper.style.display="";
       scroll_down.style.display="none";
     
   
@@ -3904,7 +3693,7 @@ document.addEventListener("DOMContentLoaded", function () {
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"淼言学习记 - Xenns","url":"https://xenns.com/","logo":{"@type":"ImageObject","url":"https://cdn.nxingcloud.co/images/logo/icon/logo_192x192-1bbba21164f88b5483eb56300e2b168d-9871be.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"南星&NXing","image":{"@type":"ImageObject","url":"https://cdn.nxingcloud.co/images/logo/icon/logo_192x192-1bbba21164f88b5483eb56300e2b168d-9871be.png"},"url":"https://xenns.com/","sameAs":["https://github.com/ZhangXQA"],"description":"这里是南星的小站，用来做我的学习记录记录，不定时分享C语言，C++，Python，计算机网络，及日常使用技巧等方面的内容"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://xenns.com/","name":"淼言学习记 - Xenns"}},{"@type":"ListItem","position":2,"item":{"@id":"https://xenns.com/categories/PHP/","name":"PHP"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"淼言学习记 - Xenns","url":"https://xenns.com/","keywords":"NXing,NXingcloud,南星,博客,Blog,C++,C语言,Python,网络技术,volantis","description":"这里是南星的小站，用来做我的学习记录记录，不定时分享C语言，C++，Python，计算机网络，及日常使用技巧等方面的内容","author":{"@type":"Person","name":"南星&NXing","image":{"@type":"ImageObject","url":"https://cdn.nxingcloud.co/images/logo/icon/logo_192x192-1bbba21164f88b5483eb56300e2b168d-9871be.png"},"url":"https://xenns.com/","description":"这里是南星的小站，用来做我的学习记录记录，不定时分享C语言，C++，Python，计算机网络，及日常使用技巧等方面的内容"},"publisher":{"@type":"Organization","name":"淼言学习记 - Xenns","url":"https://xenns.com/","logo":{"@type":"ImageObject","url":"https://cdn.nxingcloud.co/images/logo/icon/logo_192x192-1bbba21164f88b5483eb56300e2b168d-9871be.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://xenns.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"这里是南星的小站，用来做我的学习记录记录，不定时分享C语言，C++，Python，计算机网络，及日常使用技巧等方面的内容","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"南星&NXing","image":{"@type":"ImageObject","url":"https://cdn.nxingcloud.co/images/logo/icon/logo_192x192-1bbba21164f88b5483eb56300e2b168d-9871be.png"},"url":"https://xenns.com/"},"publisher":{"@type":"Organization","name":"淼言学习记 - Xenns","logo":{"@type":"ImageObject","url":"https://cdn.nxingcloud.co/images/logo/icon/logo_192x192-1bbba21164f88b5483eb56300e2b168d-9871be.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://cdn.nxingcloud.co/images/logo/icon/logo_192x192-1bbba21164f88b5483eb56300e2b168d-9871be.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"淼言学习记 - Xenns","url":"https://xenns.com/","logo":{"@type":"ImageObject","url":"https://cdn.nxingcloud.co/images/logo/icon/logo-5-209a13.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"南星&NXing","image":{"@type":"ImageObject","url":"https://cdn.nxingcloud.co/images/logo/icon/logo-5-209a13.png"},"url":"https://xenns.com/","sameAs":["https://github.com/imXenns"],"description":"这里是南星的小站，用来做我的学习记录记录，不定时分享C语言，C++，Python，计算机网络，及日常使用技巧等方面的内容"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://xenns.com/","name":"淼言学习记 - Xenns"}},{"@type":"ListItem","position":2,"item":{"@id":"https://xenns.com/categories/PHP/","name":"PHP"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"淼言学习记 - Xenns","url":"https://xenns.com/","keywords":"NXing,NXingcloud,南星,博客,Blog,C++,C语言,Python,网络技术,volantis","description":"这里是南星的小站，用来做我的学习记录记录，不定时分享C语言，C++，Python，计算机网络，及日常使用技巧等方面的内容","author":{"@type":"Person","name":"南星&NXing","image":{"@type":"ImageObject","url":"https://cdn.nxingcloud.co/images/logo/icon/logo-5-209a13.png"},"url":"https://xenns.com/","description":"这里是南星的小站，用来做我的学习记录记录，不定时分享C语言，C++，Python，计算机网络，及日常使用技巧等方面的内容"},"publisher":{"@type":"Organization","name":"淼言学习记 - Xenns","url":"https://xenns.com/","logo":{"@type":"ImageObject","url":"https://cdn.nxingcloud.co/images/logo/icon/logo-5-209a13.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://xenns.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"这里是南星的小站，用来做我的学习记录记录，不定时分享C语言，C++，Python，计算机网络，及日常使用技巧等方面的内容","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"南星&NXing","image":{"@type":"ImageObject","url":"https://cdn.nxingcloud.co/images/logo/icon/logo-5-209a13.png"},"url":"https://xenns.com/"},"publisher":{"@type":"Organization","name":"淼言学习记 - Xenns","logo":{"@type":"ImageObject","url":"https://cdn.nxingcloud.co/images/logo/icon/logo-5-209a13.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://cdn.nxingcloud.co/images/logo/icon/logo-5-209a13.png","width":192,"height":192}}]</script>
 
 
 
