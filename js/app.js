@@ -131,7 +131,7 @@ const VolantisApp = (() => {
           json = JSON.parse(localStorage.getItem(type))
         } else {
           json = await VolantisRequest.POST('https://artalk.xenns.com/api/stat', {
-            site_name: '淼言学习记 - Xenns',
+            site_name: '淼言学习记 - XyoZang',
             type: type,
             limit: limit
           })
@@ -143,7 +143,7 @@ const VolantisApp = (() => {
           switch (type) {
             case 'pv_most_pages':
             case 'rand_pages':
-              const title = item?.title.replaceAll(' - 淼言学习记 - Xenns', '');
+              const title = item?.title.replaceAll(' - 淼言学习记 - XyoZang', '');
               html = `${html}<li><span>${index + 1}</span><a title='${title}' href='${item?.key}'>${title}</a></li>`;
               break;
             case 'latest_comments':
